@@ -1,0 +1,90 @@
+.open-one-front{
+    width: 200% !important; 
+    height: 100% !important;
+    transition: .5s;
+}
+
+.open-one-back{
+    width: 300% !important;
+    height: 100% !important;
+    z-index: 100 !important;
+    margin-left: 200% !important;
+    transition: .5s;
+}
+
+.open-two-front{
+    margin-left: -100% !important;
+    width: 200% !important;
+    transition: .5s;
+}
+
+.open-two-back{
+    width: 300% !important;
+    height: 100%;
+    margin-left: 100% !important;
+    transition: .5s;
+}
+
+
+.open-three-front{
+    width: 200% !important;
+    margin-left: -200% !important;
+    transition: .7s;
+}
+
+.open-three-back{
+    width: 300% !important;
+    transition: .5s; 
+}
+
+.open-four-front{
+    width: 200% !important;
+    transition: .7s;
+}
+
+.open-four-back{
+    width: 300% !important;
+    margin-left: -300% !important;
+    transition: .5s; 
+}
+
+.open-five-front{
+    width: 200% !important;
+    transition: .7s;
+    margin-left: -100% !important;
+}
+
+.open-five-back{
+    width: 300% !important;
+    margin-left: -400% !important;
+    transition: .5s; 
+}
+
+
+// ========================================
+// SPECIAL EVENTS ANIMATION CLASSES
+// ========================================
+
+
+.open-special-one-back{
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 200px !important;
+    transition: all .3s ease-in-out;
+}
+
+.open-special-two-front{
+    width: 100%;
+    margin-top: -200px;
+    height: 100% !important;
+    transition: .5s ease-in-out;
+}
+
+.zindex{
+    z-index: 1000 !important;
+}
+
+.event:hover .content-front h4{
+    color: #FBFCD7;
+    text-shadow: 0 0px 6px #ebf128;
+}

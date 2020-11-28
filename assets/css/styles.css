@@ -1,0 +1,406 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  background-color: #9AA759; }
+
+.open-one-front {
+  width: 200% !important;
+  height: 100% !important;
+  transition: .5s; }
+
+.open-one-back {
+  width: 300% !important;
+  height: 100% !important;
+  z-index: 100 !important;
+  margin-left: 200% !important;
+  transition: .5s; }
+
+.open-two-front {
+  margin-left: -100% !important;
+  width: 200% !important;
+  transition: .5s; }
+
+.open-two-back {
+  width: 300% !important;
+  height: 100%;
+  margin-left: 100% !important;
+  transition: .5s; }
+
+.open-three-front {
+  width: 200% !important;
+  margin-left: -200% !important;
+  transition: .7s; }
+
+.open-three-back {
+  width: 300% !important;
+  transition: .5s; }
+
+.open-four-front {
+  width: 200% !important;
+  transition: .7s; }
+
+.open-four-back {
+  width: 300% !important;
+  margin-left: -300% !important;
+  transition: .5s; }
+
+.open-five-front {
+  width: 200% !important;
+  transition: .7s;
+  margin-left: -100% !important; }
+
+.open-five-back {
+  width: 300% !important;
+  margin-left: -400% !important;
+  transition: .5s; }
+
+.open-special-one-back {
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: 200px !important;
+  transition: all .3s ease-in-out; }
+
+.open-special-two-front {
+  width: 100%;
+  margin-top: -200px;
+  height: 100% !important;
+  transition: .5s ease-in-out; }
+
+.zindex {
+  z-index: 1000 !important; }
+
+.event:hover .content-front h4 {
+  color: #FBFCD7;
+  text-shadow: 0 0px 6px #ebf128; }
+
+.heading-primary {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  .heading-primary h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+    color: #FBFCD7;
+    text-shadow: 0 0px 6px #ebf128;
+    margin: 80px 0 80px 0; }
+
+.heading-secondary {
+  width: 100%;
+  margin: 50px auto 50px auto;
+  color: #f2f2f2; }
+  .heading-secondary h2 {
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 1px;
+    text-align: center; }
+  .heading-secondary h3 {
+    font-size: 4rem;
+    font-weight: 400; }
+  .heading-secondary p {
+    text-align: center;
+    font-size: 2rem; }
+
+.heading-events h4 {
+  font-size: 2.5rem;
+  color: #f2f2f2;
+  line-height: 30px;
+  font-weight: 400; }
+
+.content-front {
+  height: 30px;
+  width: 100%;
+  background-color: rgba(39, 39, 39, 0.7);
+  position: absolute;
+  bottom: 0;
+  text-align: center; }
+  .content-front h4 {
+    font-size: 2.5rem;
+    color: #f2f2f2;
+    line-height: 30px;
+    font-weight: 400; }
+
+.content-back {
+  padding: 20px; }
+  .content-back h4 {
+    font-size: 3rem;
+    color: #272727;
+    font-weight: 400; }
+  .content-back p {
+    font-size: 1rem;
+    line-height: 3rem; }
+
+.closing-tag {
+  text-align: right;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-size: 2rem; }
+
+.section-header {
+  height: 10rem;
+  padding: 0 3rem;
+  margin-bottom: 50px;
+  background-color: #1e3040;
+  color: #f2f2f2; }
+  .section-header__content {
+    max-width: 160rem;
+    margin: 0 auto;
+    position: relative; }
+    .section-header__content__logo {
+      padding: 1rem;
+      display: inline-block; }
+      .section-header__content__logo img {
+        height: 7rem; }
+    .section-header__content__nav {
+      display: inline-block;
+      position: absolute;
+      right: 3rem;
+      top: 50%;
+      transform: translateY(-50%); }
+      .section-header__content__nav ul {
+        list-style: none; }
+        .section-header__content__nav ul > *:not(:first-child) {
+          margin-left: 30px; }
+        .section-header__content__nav ul li {
+          display: inline-block;
+          font-size: 1.7rem;
+          text-transform: uppercase; }
+
+.section-hero {
+  width: 122rem;
+  margin: 0 auto;
+  height: 45rem;
+  position: relative; }
+  .section-hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+    .section-hero__video--content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+.section-events {
+  width: 122rem;
+  margin: 0 auto;
+  margin-top: 100px; }
+  .section-events__welcome-text {
+    width: 70%;
+    margin-bottom: 150px; }
+  .section-events__events-headings {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; }
+    .section-events__events-headings .daily-program {
+      justify-self: left; }
+    .section-events__events-headings .special-program {
+      justify-self: right; }
+    .section-events__events-headings h3 {
+      color: #f2f2f2;
+      font-size: 4rem;
+      font-weight: 400; }
+  .section-events__events-grid {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 55% 1fr;
+    grid-gap: 30px; }
+    .section-events__events-grid .daily-events {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+      .section-events__events-grid .daily-events__event1 {
+        position: relative;
+        z-index: 50; }
+        .section-events__events-grid .daily-events__event1--front-side {
+          width: 100%;
+          height: 100%;
+          background-image: url(../image/events/lights2.jpg);
+          background-position: center;
+          background-size: cover;
+          position: relative;
+          transition: .3s ease-in;
+          z-index: 110; }
+        .section-events__events-grid .daily-events__event1--back-side {
+          height: 100%;
+          width: 100%;
+          background-color: coral;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          z-index: -100;
+          overflow: hidden;
+          transition: .5s ease-out; }
+      .section-events__events-grid .daily-events__event2 {
+        position: relative;
+        z-index: 10;
+        transition: .5s ease-out; }
+        .section-events__events-grid .daily-events__event2--front-side {
+          width: 100%;
+          height: 100%;
+          background-image: url(../image/events/redcross.jpg);
+          background-position: center;
+          background-size: cover;
+          transition: .3s ease-in;
+          z-index: 20;
+          text-align: center;
+          position: relative; }
+        .section-events__events-grid .daily-events__event2--back-side {
+          background-color: coral;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -100;
+          overflow: hidden;
+          transition: .5s ease-out;
+          text-align: center; }
+      .section-events__events-grid .daily-events__event3 {
+        position: relative;
+        z-index: 10;
+        transition: .5s ease-out; }
+        .section-events__events-grid .daily-events__event3--front-side {
+          width: 100%;
+          height: 100%;
+          background-image: url(../image/events/pharmacy.jpg);
+          background-position: center;
+          background-size: cover;
+          transition: .3s ease-in;
+          z-index: 20;
+          text-align: center;
+          position: relative; }
+        .section-events__events-grid .daily-events__event3--back-side {
+          background-color: coral;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -100;
+          overflow: hidden;
+          transition: .5s ease-out;
+          text-align: center; }
+      .section-events__events-grid .daily-events__event4 {
+        position: relative;
+        z-index: 10;
+        transition: .5s ease-out; }
+        .section-events__events-grid .daily-events__event4--front-side {
+          width: 100%;
+          height: 100%;
+          background-image: url(../image/events/santa.jpg);
+          background-position: center;
+          background-size: cover;
+          transition: .3s ease-in;
+          z-index: 20;
+          text-align: center;
+          position: relative; }
+        .section-events__events-grid .daily-events__event4--back-side {
+          background-color: coral;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -100;
+          overflow: hidden;
+          transition: .5s ease-out;
+          text-align: center; }
+      .section-events__events-grid .daily-events__event5 {
+        position: relative;
+        z-index: 10;
+        transition: .5s ease-out; }
+        .section-events__events-grid .daily-events__event5--front-side {
+          width: 100%;
+          height: 100%;
+          background-image: url(../image/events/buffet.jpg);
+          background-position: center;
+          background-size: cover;
+          transition: .3s ease-in;
+          z-index: 20;
+          text-align: center;
+          position: relative; }
+        .section-events__events-grid .daily-events__event5--back-side {
+          background-color: coral;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -100;
+          overflow: hidden;
+          transition: .5s ease-out;
+          text-align: center; }
+    .section-events__events-grid .special-events {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr; }
+      .section-events__events-grid .special-events__event1 {
+        position: relative;
+        transition: all .3s ease-in-out; }
+        .section-events__events-grid .special-events__event1--front {
+          width: 100%;
+          height: 100%;
+          background-image: url(../image/events/mette1.jpg);
+          background-position: center;
+          background-size: cover;
+          position: relative;
+          transition: all .3s ease-in-out;
+          z-index: 100; }
+        .section-events__events-grid .special-events__event1--back {
+          background-color: coral;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 80;
+          overflow: hidden;
+          transition: all .3s ease-in-out;
+          text-align: center; }
+      .section-events__events-grid .special-events__event2 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: all .3s ease-out; }
+        .section-events__events-grid .special-events__event2--front {
+          width: 100%;
+          height: 100%;
+          background-image: url(../image/events/choir.jpg);
+          background-position: center;
+          background-size: cover;
+          position: relative;
+          transition: all .3s ease-out; }
+        .section-events__events-grid .special-events__event2--back {
+          background-color: coral;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -100;
+          overflow: hidden;
+          text-align: center;
+          transition: all .3s ease-out; }
+
+.section-program {
+  margin: 150px auto 80px auto; }

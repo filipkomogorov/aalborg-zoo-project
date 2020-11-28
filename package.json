@@ -1,0 +1,14 @@
+{
+  "name": "filip-playground",
+  "version": "1.0.0",
+  "description": "First draft of Christmas at Zoo website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/styles.css -w"
+  },
+  "author": "Filipp",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

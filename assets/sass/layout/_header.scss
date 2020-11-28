@@ -1,0 +1,45 @@
+.section-header{
+    height: 10rem;
+    padding: 0 3rem;
+    margin-bottom: 50px;
+    
+    background-color: $color-blue-dark;
+    color: $color-white;
+
+    &__content{
+        max-width: 160rem;
+        margin: 0 auto;
+        position: relative;
+
+        &__logo{
+            padding: 1rem;
+            display: inline-block;
+    
+            img{
+                height: 7rem;
+            }
+        }
+    
+        &__nav{
+            display: inline-block;
+            position: absolute;
+            right: 3rem;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            ul{
+                list-style: none;
+    
+                &>*:not(:first-child){
+                    margin-left: 30px;
+                }
+                
+                li{
+                    display: inline-block;
+                    font-size: 1.7rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
