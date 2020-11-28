@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: 'Source Serif Pro', serif;
-  background-color: #9AA759; }
+  background-image: linear-gradient(to bottom, #9AA759, #6A8C61, #3B5B3B);
+  background-repeat: no-repeat; }
 
 .open-one-front {
   width: 200% !important;
@@ -201,8 +202,9 @@ body {
   position: fixed;
   z-index: 9000; }
   .section-snow h6 {
-    font-size: 5rem;
-    color: #f2f2f2; }
+    font-size: 6rem;
+    color: #FBFCD7;
+    text-shadow: 0 0px 6px #ebf128; }
     .section-snow h6:hover {
       cursor: pointer; }
 
@@ -213,8 +215,7 @@ body {
   background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
   animation-name: snowing;
   animation-duration: 33s;
-  animation-iteration-count: infinite;
-  transition: all .4s; }
+  animation-iteration-count: infinite; }
 
 .section-events {
   width: 122rem;
@@ -428,4 +429,13 @@ body {
           transition: all .3s ease-out; }
 
 .section-program {
+  width: 100%;
+  height: 100%;
   margin: 150px auto 80px auto; }
+  .section-program__grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-rows: 50% 1fr;
+    grid-gap: 50px; }
