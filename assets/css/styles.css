@@ -80,32 +80,49 @@ body {
   z-index: 1000 !important; }
 
 .event:hover .content-front h4 {
-  color: #FBFCD7;
-  text-shadow: 0 0px 6px #ebf128; }
+  background-color: rgba(97, 9, 9, 0.7);
+  color: #f2f2f2; }
+
+.snow {
+  width: 100%;
+  height: 3500px;
+  position: absolute;
+  background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
+  animation-name: snowing;
+  animation-duration: 40s;
+  animation-iteration-count: infinite; }
 
 @keyframes snowing {
   0% {
-    background-position: 0px 0px, 0px 0px; }
+    background-position: 0px 0px, 500px 0px; }
   100% {
-    background-position: 700px 2500px, 230px 2500px; } }
+    background-position: 700px 3500px, 230px 3500px; } }
 
 .heading-primary {
   width: 100%;
-  margin: 0 auto;
-  text-align: center; }
+  margin: 50px auto 50px auto;
+  color: #f2f2f2;
+  background-color: #618762; }
   .heading-primary h2 {
-    font-family: 'Dancing Script', cursive;
     font-size: 6rem;
-    color: #FBFCD7;
-    text-shadow: 0 0px 6px #ebf128;
-    margin: 80px 0 80px 0; }
+    font-weight: 500;
+    margin-bottom: 1px;
+    text-align: center;
+    padding-top: 10px; }
+  .heading-primary h3 {
+    font-size: 4rem;
+    font-weight: 400; }
+  .heading-primary p {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 20px; }
 
 .heading-secondary {
   width: 100%;
   margin: 50px auto 50px auto;
   color: #f2f2f2; }
   .heading-secondary h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 500;
     margin-bottom: 1px;
     text-align: center; }
@@ -115,6 +132,18 @@ body {
   .heading-secondary p {
     text-align: center;
     font-size: 2rem; }
+
+.heading-tertiary {
+  width: 100%;
+  color: #3B5B3B;
+  text-align: center; }
+  .heading-tertiary h3 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 15px 20px 20px 20px; }
+  .heading-tertiary p {
+    font-size: 1.5rem;
+    padding: 0px 30px 10px 30px; }
 
 .heading-events h4 {
   font-size: 2.5rem;
@@ -150,6 +179,34 @@ body {
   margin-top: 1rem;
   margin-right: 1rem;
   font-size: 2rem; }
+
+.card-image-1 {
+  height: 200px;
+  width: auto; }
+  .card-image-1 img {
+    height: 200px;
+    width: auto; }
+
+.card-content-1__text {
+  height: 100px;
+  display: block; }
+
+.card-content-1__btn {
+  height: 100px;
+  position: relative; }
+  .card-content-1__btn a {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-image: linear-gradient(to right, #6A8C61, #3B5B3B); }
 
 .section-header {
   height: 10rem;
@@ -207,15 +264,6 @@ body {
     text-shadow: 0 0px 6px #ebf128; }
     .section-snow h6:hover {
       cursor: pointer; }
-
-.snow {
-  width: 100%;
-  height: 2500px;
-  position: absolute;
-  background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
-  animation-name: snowing;
-  animation-duration: 33s;
-  animation-iteration-count: infinite; }
 
 .section-events {
   width: 122rem;
@@ -432,6 +480,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 150px auto 80px auto; }
+  .section-program__title {
+    background-color: #5b885d;
+    padding: 20px 0; }
   .section-program__grid {
     width: 100%;
     height: 100%;
@@ -439,3 +490,27 @@ body {
     grid-template-rows: 1fr;
     grid-template-rows: 50% 1fr;
     grid-gap: 50px; }
+
+.section-tickets {
+  width: 114rem;
+  margin: auto;
+  margin-bottom: 150px; }
+  .section-tickets__title {
+    margin-bottom: 100px; }
+  .section-tickets__grid {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center; }
+    .section-tickets__grid__background {
+      width: 300px;
+      height: 100%;
+      background-color: white;
+      justify-self: center;
+      position: relative;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }

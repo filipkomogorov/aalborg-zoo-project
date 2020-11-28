@@ -85,8 +85,8 @@
 }
 
 .event:hover .content-front h4{
-    color: #FBFCD7;
-    text-shadow: 0 0px 6px #ebf128;
+    background-color: rgba(rgb(97, 9, 9), .7);
+    color: $color-white;
 }
 
 
@@ -95,9 +95,20 @@
 // SNOW ANIMATION
 // ========================================
 
+.snow{
+    width: 100%;
+    height: 3500px;
+    position: absolute;
+    background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
+    // z-index: 30000;
 
+    animation-name: snowing;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    
+}
 
 @keyframes snowing{
-    0%{ background-position: 0px 0px, 0px 0px}
-    100%{background-position: 700px 2500px, 230px 2500px}
+    0%{ background-position: 0px 0px, 500px 0px}
+    100%{background-position: 700px 3500px, 230px 3500px}
 }

@@ -1,16 +1,27 @@
-
 .heading-primary{
-
+    
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    margin: 50px auto 50px auto;
+    color: $color-white;
+    background-color: #618762;
 
     h2{
-        font-family: 'Dancing Script', cursive;
         font-size: 6rem;
-        color: #FBFCD7;
-        text-shadow: 0 0px 6px #ebf128;
-        margin: 80px 0 80px 0;
+        font-weight: 500;
+        margin-bottom: 1px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    h3{
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    p{
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 20px;
     }
 }
 
@@ -22,7 +33,7 @@
     color: $color-white;
 
     h2{
-        font-size: 6rem;
+        font-size: 5rem;
         font-weight: 500;
         margin-bottom: 1px;
         text-align: center;
@@ -36,6 +47,24 @@
     p{
         text-align: center;
         font-size: 2rem;
+    }
+}
+.heading-tertiary{
+    width: 100%;
+    color: #3B5B3B;
+    text-align: center;
+    
+
+    h3{
+        font-size: 3rem;
+        margin: 0;
+        padding: 15px 20px 20px 20px;
+
+    }
+
+    p{
+        font-size: 1.5rem;
+        padding: 0px 30px 10px 30px;
     }
 }
 
@@ -87,3 +116,4 @@
         margin-right: 1rem;
         font-size: 2rem;
     }
+
