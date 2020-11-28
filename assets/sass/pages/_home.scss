@@ -362,16 +362,19 @@
 
 }
 
+.section-tickets__title{
+    width: 100%;
+    background-color: #5b885d;
+    margin-bottom: 100px;
+    padding: 20px 0;
+}
+
 .section-tickets{
 
     width: 114rem;
     margin: auto;
     margin-bottom: 150px;
 
-    &__title{
-        margin-bottom: 100px;
-        
-    }
 
     &__grid{
         width: 100%;

@@ -101,7 +101,7 @@ body {
 .heading-primary {
   width: 100%;
   margin: 50px auto 50px auto;
-  color: #f2f2f2;
+  color: #fff;
   background-color: #618762; }
   .heading-primary h2 {
     font-size: 6rem;
@@ -120,7 +120,7 @@ body {
 .heading-secondary {
   width: 100%;
   margin: 50px auto 50px auto;
-  color: #f2f2f2; }
+  color: #fff; }
   .heading-secondary h2 {
     font-size: 5rem;
     font-weight: 500;
@@ -491,12 +491,16 @@ body {
     grid-template-rows: 50% 1fr;
     grid-gap: 50px; }
 
+.section-tickets__title {
+  width: 100%;
+  background-color: #5b885d;
+  margin-bottom: 100px;
+  padding: 20px 0; }
+
 .section-tickets {
   width: 114rem;
   margin: auto;
   margin-bottom: 150px; }
-  .section-tickets__title {
-    margin-bottom: 100px; }
   .section-tickets__grid {
     width: 100%;
     height: 400px;
