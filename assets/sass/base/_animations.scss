@@ -88,3 +88,16 @@
     color: #FBFCD7;
     text-shadow: 0 0px 6px #ebf128;
 }
+
+
+
+// ========================================
+// SNOW ANIMATION
+// ========================================
+
+
+
+@keyframes snowing{
+    0%{ background-position: 0px 0px, 0px 0px}
+    100%{background-position: 700px 2500px, 230px 2500px}
+}

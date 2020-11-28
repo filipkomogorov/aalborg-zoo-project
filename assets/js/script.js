@@ -39,6 +39,13 @@ var specialTwo = document.getElementById('specialTwo');
 var specialTwoFront = document.getElementById('specialTwoFront');
 var specialTwoBack = document.getElementById('specialTwoBack');
 
+// ======================================
+//  SNOW & COVID
+// ======================================
+
+var snowButton = document.getElementById('snowBtn');
+var snow = document.getElementById("snow");
+
 
 // ======================================
 //  EVENT LISTENERS
@@ -53,6 +60,8 @@ elementFive.addEventListener('click', eventFiveOpen)
 
 specialOne.addEventListener('click', specialOneOpen)
 specialTwo.addEventListener('click', specialTwoOpen)
+
+snowButton.addEventListener('click', snowing)
 
 // ======================================
 //  TOGGLE FUNCTIONS
@@ -99,4 +108,8 @@ function specialOneOpen() {
 function specialTwoOpen() {
     specialTwoFront.classList.toggle('open-special-two-front');
     specialTwo.classList.toggle('zindex');
+}
+
+function snowing() {
+    snow.classList.toggle('snow');
 }
