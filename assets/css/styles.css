@@ -86,7 +86,7 @@ body {
 
 .snow {
   width: 100%;
-  height: 3500px;
+  height: 3850px;
   position: absolute;
   background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
   animation-name: snowing;
@@ -97,17 +97,32 @@ body {
   0% {
     background-position: 0px 0px, 500px 0px; }
   100% {
-    background-position: 700px 3500px, 230px 3500px; } }
+    background-position: 700px 4000px, 230px 4000px; } }
 
 .show-nav {
   left: 0 !important;
   transition: all .5s ease-in-out; }
+
+.btn-animation .btnLine-1 {
+  transform: translateY(9px) rotate(45deg); }
+
+.btn-animation .btnLine-2 {
+  opacity: 0; }
+
+.btn-animation .btnLine-3 {
+  transform: translateY(-9px) rotate(135deg); }
 
 .heading-primary {
   width: 100%;
   margin: 50px auto 50px auto;
   color: #fff;
   background-color: #618762; }
+  .heading-primary h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 1px;
+    text-align: center;
+    padding-top: 10px; }
   .heading-primary h2 {
     font-size: 6rem;
     font-weight: 500;
@@ -244,16 +259,31 @@ body {
           display: inline-block;
           font-size: 1.7rem;
           text-transform: uppercase; }
-      .section-header__content__nav button {
-        font-size: 3.7rem;
-        background-color: transparent;
-        color: #f2f2f2;
-        outline: none;
-        border: none;
+      .section-header__content__nav .hamburgerBtn {
         position: absolute;
         top: 30px;
         right: 0;
         cursor: pointer; }
+        .section-header__content__nav .hamburgerBtn .btnLine {
+          width: 25px;
+          height: 2px;
+          background-color: white;
+          border-radius: 50px;
+          display: block;
+          margin-bottom: 7px;
+          transition: all .3s ease-in-out; }
+
+footer {
+  width: 100%;
+  background-color: #3b5b3b; }
+  footer .footer-content {
+    width: 114rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 48px; }
+    footer .footer-content__logo img {
+      height: 65px;
+      width: auto; }
 
 .section-hero {
   max-width: 122rem;
@@ -283,7 +313,7 @@ body {
       cursor: pointer; }
 
 .section-events {
-  width: 122rem;
+  max-width: 122rem;
   margin: 0 auto;
   margin-top: 100px; }
   .section-events__welcome-text {
@@ -303,7 +333,8 @@ body {
       font-size: 4rem;
       font-weight: 400; }
   .section-events__events-grid {
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
     height: 400px;
     display: grid;
     grid-template-rows: 1fr;
@@ -525,13 +556,79 @@ body {
     position: relative;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 30px;
     justify-content: center; }
     .section-tickets__grid__background {
-      width: 300px;
+      width: 100%;
       height: 100%;
       background-color: white;
       justify-self: center;
       position: relative;
       text-align: center;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.section-gallery {
+  width: 114rem;
+  margin: 0 auto; }
+  .section-gallery__grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 30px; }
+    .section-gallery__grid--style img {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      object-fit: cover;
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); }
+
+.pop-up {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s; }
+  .pop-up__content {
+    width: 80%;
+    height: 65vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .pop-up__content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .pop-up .arrow-back {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%); }
+    .pop-up .arrow-back a {
+      color: white; }
+  .pop-up .arrow-forward {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%); }
+    .pop-up .arrow-forward a {
+      color: white; }
+  .pop-up .closing-tag {
+    position: absolute;
+    top: 19%;
+    right: 11%; }
+    .pop-up .closing-tag a {
+      color: white; }
+
+.pop-up:target {
+  opacity: 1;
+  visibility: visible; }

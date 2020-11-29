@@ -39,16 +39,21 @@
                 }
             }
 
-            button{
-                font-size: 3.7rem;
-                background-color: transparent;
-                color: $color-white;
-                outline: none;
-                border: none;
+            .hamburgerBtn{
                 position: absolute;
                 top:30px;
                 right: 0;
                 cursor: pointer;
+               
+                .btnLine{
+                    width: 25px;
+                    height: 2px;
+                    background-color: white;
+                    border-radius: 50px;
+                    display: block;
+                    margin-bottom: 7px;
+                    transition: all .3s ease-in-out;
+                }
                 
             }
         }

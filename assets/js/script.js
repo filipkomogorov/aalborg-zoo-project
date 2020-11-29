@@ -69,6 +69,7 @@ specialTwo.addEventListener('click', specialTwoOpen)
 snowButton.addEventListener('click', snowing)
 
 hamburgerMenu.addEventListener('click', showNav)
+hamburgerMenu.addEventListener('click', btnAnimation)
 
 // ======================================
 //  TOGGLE FUNCTIONS
@@ -123,4 +124,8 @@ function snowing() {
 
 function showNav() {
     navigation.classList.toggle("show-nav")
+}
+
+function btnAnimation() {
+    hamburgerMenu.classList.toggle("btn-animation")
 }

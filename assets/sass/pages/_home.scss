@@ -41,7 +41,7 @@
 
 
 .section-events{
-    width: 122rem;
+    max-width: 122rem;
     margin: 0 auto;
     margin-top: 100px;
 
@@ -73,7 +73,8 @@
     }
 
     &__events-grid{
-        width: 100%;
+        width: 98%;
+        margin: 0 auto;
         height: 400px;
 
         display: grid;
@@ -354,13 +355,13 @@
 
         grid-gap: 50px;
 
-        &--calendar{
+        // &--calendar{
 
-        }
+        // }
 
-        &--workhours{
+        // &--workhours{
 
-        }
+        // }
     }
 
 }
@@ -388,14 +389,16 @@
         display: grid;
 
         grid-template-rows: 1fr;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 300px 300px 300px;
+        
+        grid-gap: 30px;
 
         justify-content: center;
 
 
 
         &__background{
-            width: 300px;
+            width: 100%;
             height: 100%;
             background-color: white;
             justify-self: center;
@@ -407,3 +410,118 @@
 
     }
 }
+
+
+.section-gallery{
+    width: 114rem;
+    margin: 0 auto;
+
+    &__grid{
+        width: 100%;
+        height: 100%;
+
+
+        display: grid;
+
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 30% 30% 30%;
+
+        grid-gap: 30px;
+
+        &--style{
+            
+
+            img{
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                object-fit: cover;
+                box-shadow: 0 0px 10px rgba(0,0,0, .2);
+            }
+        }
+    }
+}
+
+.pop-up{
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    
+
+    &__content{
+        width: 80%;
+        height: 65vh;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .arrow-back{
+        position: absolute;
+        top: 50%;
+        left: 6%;
+        transform: translateY(-50%);
+
+        a{
+            color: white;
+        }
+    }
+
+    .arrow-forward{
+        position: absolute;
+        top: 50%;
+        right: 6%;
+        transform: translateY(-50%);
+
+
+        a{
+            color: white;
+        }
+    }
+
+    .closing-tag{
+        position: absolute;
+        top: 19%;
+        right: 11%;
+
+        a{
+            color: white;
+        }
+        
+    }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+  .pop-up:target{
+    opacity: 1;
+    visibility: visible;
+  }
+  

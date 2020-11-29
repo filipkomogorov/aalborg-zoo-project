@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +33,11 @@
                     <li>Tickets</li>
                     <li>Gallery</li>
                 </ul>
-                <button id="btnMenu" class="btn-hidden" type="button">&#9776;</button>
+                <div id="btnMenu" class="btn-hidden hamburgerBtn">
+                    <div class="btnLine btnLine-1"></div>
+                    <div class="btnLine btnLine-2"></div>
+                    <div class="btnLine btnLine-3"></div>
+                </div>
             </div>
 
         </div>
@@ -52,8 +57,8 @@
             <div class="section-hero__video">
                 <video class="section-hero__video--content" muted="muted" autoplay="autoplay" loop="loop" playsinline
                     preload="metadata">
-                    <source src="assets/video/video_small.mp4" media="screen and (max-device-width:1024px)">
-                    <source src="assets/video/video_large.mp4" media="screen and (min-device-width:1025px)">
+                    <!-- <source src="assets/video/video_small.mp4"> -->
+                    <source src="assets/video/video_large.mp4">
                 </video>
             </div>
             <div class="section-hero__spacing-after"></div>
@@ -61,22 +66,17 @@
         </section>
 
 
-
-
-
         <div class="heading-primary">
-            <h2>
+            <h1>
                 Christmas at Zoo
-            </h2>
+            </h1>
             <p>
                 Join the animals on a magical Christmas adventure!
             </p>
         </div>
 
+
         <section class="section-events">
-
-
-
 
 
             <div class="section-events__events-headings">
@@ -330,7 +330,6 @@
                         </div>
                     </div>
 
-
                 </div>
 
                 <div class="section-tickets__grid__background">
@@ -351,161 +350,268 @@
 
             </div>
         </section>
-        <section class="section-gallery">
-            <div class="section-gallery__title heading-secondary">
-                <h2>
-                    Gallery
-                </h2>
-            </div>
+
+        <div class="section-gallery__title heading-secondary">
+            <h2>
+                Gallery
+            </h2>
+        </div>
+
+        <section class="section-gallery" id="gallery">
+
             <div class="section-gallery__grid">
-                <div class="section-gallery__styleimg">
-                    <a href="#pop-up-light_entrance"><img src="assets/image/gallery/gallery2/LightEntrence.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsOne"><img src="assets/image/gallery/one.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
-                <div class="section-gallery__styleimg">
-                    <a href=""><img src="assets/image/gallery/gallery2/LightAcorn.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsTwo"><img src="assets/image/gallery/two.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
-                <div class="section-gallery__styleimg">
-                    <a href=""><img src="assets/image/gallery/gallery2/LightAfrica.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsThree"><img src="assets/image/gallery/three.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
-                <div class="section-gallery__styleimg">
-                    <a href=""><img src="assets/image/gallery/gallery2/Christmas_reindeer.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsFour"><img src="assets/image/gallery/four.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
-                <div class="section-gallery__styleimg">
-                    <a href=""><img src="assets/image/gallery/gallery2/REINDEERS.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsFive"><img src="assets/image/gallery/five.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
-                <div class="section-gallery__styleimg">
-                    <a href=""><img src="assets/image/gallery/gallery2/Ice_bears.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsSix"><img src="assets/image/gallery/six.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
-                <div class="section-gallery__styleimg">
-                    <a href=""><img src="assets/image/gallery/gallery2/LightBirds.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsSeven"><img src="assets/image/gallery/seven.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
-                <div class="section-gallery__styleimg">
-                    <a href=""><img src="assets/image/gallery/gallery2/Penquins.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsEight"><img src="assets/image/gallery/eight.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
-                <div class="section-gallery__styleimg">
-                    <a href=""><img src="assets/image/gallery/gallery2/workshop.jpg"
+                <div class="section-gallery__grid--style">
+                    <a href="#lightsNine"><img src="assets/image/gallery/nine.jpg"
                             alt="Picture of Christmas Lights events in Aalborg Zoo"></a>
                 </div>
             </div>
         </section>
 
-
-        <div class="pop-up" id="pop-up-light_entrance1">
-            <div class="pop-up-content_gallery">
-                <div class="pop-up-arrowback">
-
+        <footer>
+            <div class="footer-content">
+                <div class="footer-content__logo">
+                    <img src="assets/image/logo/logo_1.png">
                 </div>
-                <div class="pop-up-image">
-
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <p>Aalborg Zoo<br>
+                            Mølleparkvej 63<br>
+                            9000 Aalborg<br>
+                            <br>
+                            <a href="mailto:info@aalborgzoo.dk"><strong>info@aalborgzoo.dk</strong></a><br>
+                            <br>
+                            <a href="tel:96312929"><strong>Tel. 9631 2929</strong></a><br>
+                            <br>
+                            CVR No. 46983254<br>
+                            <br>
+                            <a href="https://aalborgzoo.dk/om-zoo/kontakt-os"><strong>Contact us</strong></a></p>
+                    </div>
+                    <div class="footer-column">
+                        <p><strong>Organisation</strong><br>
+                            <a href="https://aalborgzoo.dk/om-zoo/aalborg-zoos-ledelse">Management</a><br>
+                            <a href="https://aalborgzoo.dk/om-zoo/bestyrelse">Aalborg Zoo's Board of Directors</a><br>
+                            <br>
+                            <br>
+                            <a href="https://job.aalborgzoo.dk/">Job at Zoo</a><br>
+                            <br>
+                            <a href="https://aalborgzoo.dk/om-zoo/arsberetninger">Annual reports</a></p>
+                    </div>
+                    <div class="footer-column">
+                        <p><strong>Approval authority Food</strong><br>
+                            <a
+                                href="https://www.foedevarestyrelsen.dk/OmFoedevarestyrelsen/Kontakt/Sider/Forside.aspx">Authority</a><br>
+                            <br>
+                            <a href="https://aalborgzoo.dk/om-zoo/hestedonation">Donation of horse</a><br>
+                            <br>
+                            <a href="https://aalborgzoo.dk/om-zoo/miljo">Aalborg Zoo's Environmental and<br>
+                                Occupational Safety and Health<br>
+                                Certification</a><br>
+                            <br>
+                            <a href="https://aalborgzoo.dk/om-zoo/det-gode-kup">Who's the bear man?</a></p>
+                    </div>
+                    <div class="footer-column">
+                        <p><strong>Aalborg Zoo is a member of</strong><br>
+                            <br>
+                            <img
+                                src="https://cms.aalborgzoo.dk/media/333ljdqh/european_association_of_zoos_and_aquaria.png?width=117&height=89&mode=max">
+                            <br>
+                            <a href="https://aalborgzoo.dk/om-zoo/cookiepolitik">Cookies</a><br>
+                            <br>
+                            <a href="https://aalborgzoo.dk/om-zoo/behandling-af-persondata">Processing of personal
+                                data</a><br>
+                            <a href="https://aalborgzoo.dk/for-besogende/priser-og-arskort">Terms of purchase terms
+                                annual<br>
+                                cards</a></p>
+                    </div>
                 </div>
-                <div class="pop-up-arrowforward">
-
-                </div>
-            </div>
-        </div>
-        <div class="pop-up" id="pop-up-light_entrance2">
-            <div class="pop-up-content_gallery">
-                <div class="pop-up-arrowback">
-
-                </div>
-                <div class="pop-up-image">
-
-                </div>
-                <div class="pop-up-arrowforward">
-
-                </div>
-            </div>
-        </div>
-        <div class="pop-up" id="pop-up-light_entrance3">
-            <div class="pop-up-content_gallery">
-                <div class="pop-up-arrowback">
-
-                </div>
-                <div class="pop-up-image">
-
-                </div>
-                <div class="pop-up-arrowforward">
-
-                </div>
-            </div>
-        </div>
-        <div class="pop-up" id="pop-up-light_entrance4">
-            <div class="pop-up-content_gallery">
-                <div class="pop-up-arrowback">
-
-                </div>
-                <div class="pop-up-image">
-
-                </div>
-                <div class="pop-up-arrowforward">
-
-                </div>
-            </div>
-        </div>
-        <div class="pop-up" id="pop-up-light_entrance5">
-            <div class="pop-up-content_gallery">
-                <div class="pop-up-arrowback">
-
-                </div>
-                <div class="pop-up-image">
-
-                </div>
-                <div class="pop-up-arrowforward">
-
-                </div>
-            </div>
-        </div>
-        <div class="pop-up" id="pop-up-light_entrance6">
-            <div class="pop-up-content_gallery">
-                <div class="pop-up-arrowback">
-
-                </div>
-                <div class="pop-up-image">
-
-                </div>
-                <div class="pop-up-arrowforward">
-
+                <div class="footer_bottom">
+                    <p>©Webpage made by Group4</p>
+                    <p>Follow us on Social media
+                        <a href="https://www.instagram.com/aalborgzoo/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/user/aalborgzoodk"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/AalZoo"><i class="fab fa-facebook-square"></i></a>
+                        <a
+                            href="https://www.tripadvisor.dk/Attraction_Review-g189529-d243817-Reviews-Aalborg_Zoologiske_Have-Aalborg_North_Jutland_Jutland.html"><i
+                                class="fab fa-tripadvisor"></i></a>
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="pop-up" id="pop-up-light_entrance7">
-            <div class="pop-up-content_gallery">
-                <div class="pop-up-arrowback">
+        </footer>
 
-                </div>
-                <div class="pop-up-image">
-
-                </div>
-                <div class="pop-up-arrowforward">
-
-                </div>
-            </div>
-        </div>
-        <div class="pop-up" id="pop-up-light_entrance8">
-            <div class="pop-up-content_gallery">
-                <div class="pop-up-arrowback">
-
-                </div>
-                <div class="pop-up-image">
-
-                </div>
-                <div class="pop-up-arrowforward">
-
-                </div>
-            </div>
-        </div>
 
 
 
     </main>
+
+
+
+
+    <!-- GALLERY INVENTORY -->
+    <div class="pop-up" id="lightsOne">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/one.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsNine"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsTwo"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
+
+    <div class="pop-up" id="lightsTwo">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/two.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsOne"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsThree"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
+
+    <div class="pop-up" id="lightsThree">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/three.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsTwo"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsFour"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
+
+    <div class="pop-up" id="lightsFour">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/four.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsThree"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsFive"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
+
+    <div class="pop-up" id="lightsFive">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/five.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsFour"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsSix"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
+
+    <div class="pop-up" id="lightsSix">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/six.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsFive"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsSeven"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
+
+    <div class="pop-up" id="lightsSeven">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/seven.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsSix"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsEight"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
+
+    <div class="pop-up" id="lightsEight">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/eight.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsSeven"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsNine"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
+    <div class="pop-up" id="lightsNine">
+        <div class="pop-up__content">
+            <img src="assets/image/gallery/nine.jpg" alt="">
+        </div>
+        <div class="arrow-back">
+            <a href="#lightsEight"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
+        </div>
+        <div class="arrow-forward">
+            <a href="#lightsOne"><i class="far fa-arrow-alt-circle-right fa-4x"></i></a>
+        </div>
+        <div class="closing-tag">
+            <a href="#gallery"><i class="far fa-times-circle fa-4x"></i></a>
+        </div>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
