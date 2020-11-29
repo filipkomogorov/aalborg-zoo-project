@@ -26,13 +26,15 @@
                 <a href="#"><img src="assets/image/logo/logo_1.png" alt="Christmas Logo of Aalborg Zoo"></a>
             </div>
             <div class="section-header__content__nav">
-                <ul>
+                <ul id="nav">
                     <li>Events</li>
                     <li>Calendar</li>
                     <li>Tickets</li>
                     <li>Gallery</li>
                 </ul>
+                <button id="btnMenu" class="btn-hidden" type="button">&#9776;</button>
             </div>
+
         </div>
     </header>
 
@@ -41,18 +43,25 @@
     </div>
 
     <main>
+
+
+
         <section class="section-hero">
 
+            <div class="section-hero__spacing-before"></div>
             <div class="section-hero__video">
                 <video class="section-hero__video--content" muted="muted" autoplay="autoplay" loop="loop" playsinline
                     preload="metadata">
-                    <source src="assets/video/video1.mp4" type="video/mp4">
+                    <source src="assets/video/video_small.mp4" media="screen and (max-device-width:1024px)">
+                    <source src="assets/video/video_large.mp4" media="screen and (min-device-width:1025px)">
                 </video>
             </div>
-
-
+            <div class="section-hero__spacing-after"></div>
 
         </section>
+
+
+
 
 
         <div class="heading-primary">
@@ -298,7 +307,7 @@
                     </div>
                     <div class="card-content-1">
                         <div class="card-content-1__text heading-tertiary">
-                            <h3>Season Pass</h3>
+                            <h3>Season Pass?</h3>
                             <P>Lorem ipsum dolor sit amet.</P>
                         </div>
                         <div class="card-content-1__btn">
@@ -313,7 +322,7 @@
                     </div>
                     <div class="card-content-1">
                         <div class="card-content-1__text heading-tertiary">
-                            <h3>Ticket</h3>
+                            <h3 style="padding-bottom: 10px;">No Ticket? <br> No Problem</h3>
                             <P>Lorem ipsum dolor sit amet.</P>
                         </div>
                         <div class="card-content-1__btn">
@@ -330,7 +339,7 @@
                     </div>
                     <div class="card-content-1">
                         <div class="card-content-1__text heading-tertiary">
-                            <h3>Christmas Buffet</h3>
+                            <h3>Fancy Buffet?</h3>
                             <P>Lorem ipsum dolor sit amet.</P>
                         </div>
                         <div class="card-content-1__btn">

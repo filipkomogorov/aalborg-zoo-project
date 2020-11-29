@@ -22,7 +22,6 @@ var elementFourFront = document.getElementById('event4-front');
 var elementFourBack = document.getElementById('event4-back');
 
 
-
 var elementFive = document.getElementById('event5');
 var elementFiveFront = document.getElementById('event5-front');
 var elementFiveBack = document.getElementById('event5-back');
@@ -46,6 +45,12 @@ var specialTwoBack = document.getElementById('specialTwoBack');
 var snowButton = document.getElementById('snowBtn');
 var snow = document.getElementById("snow");
 
+// ======================================
+//  Navigation 
+// ======================================
+
+var hamburgerMenu = document.getElementById("btnMenu");
+var navigation = document.getElementById("nav");
 
 // ======================================
 //  EVENT LISTENERS
@@ -62,6 +67,8 @@ specialOne.addEventListener('click', specialOneOpen)
 specialTwo.addEventListener('click', specialTwoOpen)
 
 snowButton.addEventListener('click', snowing)
+
+hamburgerMenu.addEventListener('click', showNav)
 
 // ======================================
 //  TOGGLE FUNCTIONS
@@ -112,4 +119,8 @@ function specialTwoOpen() {
 
 function snowing() {
     snow.classList.toggle('snow');
+}
+
+function showNav() {
+    navigation.classList.toggle("show-nav")
 }

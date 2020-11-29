@@ -6,7 +6,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Source Serif Pro', serif;
@@ -97,6 +98,10 @@ body {
     background-position: 0px 0px, 500px 0px; }
   100% {
     background-position: 700px 3500px, 230px 3500px; } }
+
+.show-nav {
+  left: 0 !important;
+  transition: all .5s ease-in-out; }
 
 .heading-primary {
   width: 100%;
@@ -208,6 +213,9 @@ body {
     border-radius: 3px;
     background-image: linear-gradient(to right, #6A8C61, #3B5B3B); }
 
+.btn-hidden {
+  visibility: hidden; }
+
 .section-header {
   height: 10rem;
   padding: 0 3rem;
@@ -224,29 +232,38 @@ body {
       .section-header__content__logo img {
         height: 7rem; }
     .section-header__content__nav {
-      display: inline-block;
-      position: absolute;
-      right: 3rem;
-      top: 50%;
-      transform: translateY(-50%); }
+      margin-top: 40px;
+      float: right;
+      top: 100px; }
       .section-header__content__nav ul {
-        list-style: none; }
+        list-style: none;
+        margin-right: 20px; }
         .section-header__content__nav ul > *:not(:first-child) {
           margin-left: 30px; }
         .section-header__content__nav ul li {
           display: inline-block;
           font-size: 1.7rem;
           text-transform: uppercase; }
+      .section-header__content__nav button {
+        font-size: 3.7rem;
+        background-color: transparent;
+        color: #f2f2f2;
+        outline: none;
+        border: none;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        cursor: pointer; }
 
 .section-hero {
-  width: 122rem;
+  max-width: 122rem;
   margin: 0 auto;
   height: 45rem;
-  position: relative; }
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 30px 1fr 30px; }
   .section-hero__video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1; }
@@ -261,7 +278,7 @@ body {
   .section-snow h6 {
     font-size: 6rem;
     color: #FBFCD7;
-    text-shadow: 0 0px 6px #ebf128; }
+    text-shadow: 0 0px 6px #1e3040; }
     .section-snow h6:hover {
       cursor: pointer; }
 

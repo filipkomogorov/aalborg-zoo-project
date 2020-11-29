@@ -114,3 +114,12 @@
     0%{ background-position: 0px 0px, 500px 0px}
     100%{background-position: 700px 3500px, 230px 3500px}
 }
+
+// ========================================
+// NAV
+// ========================================
+
+.show-nav{
+    left: 0 !important;
+    transition: all .5s ease-in-out;
+}
