@@ -41,291 +41,99 @@
 
 
 .section-events{
-    max-width: 122rem;
+    max-width: 114rem;
     margin: 0 auto;
     margin-top: 100px;
+    
 
-    &__welcome-text{
-        width: 70%;
-        margin-bottom: 150px;
-    }
-
-    &__events-headings{
+    &__grid{
         width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
 
         display: grid;
 
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-
-        .daily-program{
-            justify-self: left;
-        }
-        .special-program{
-            justify-self: right;
-        }
-
-        h3{
-            color: $color-white;
-            font-size: 4rem;
-            font-weight: 400;
-        }
-    }
-
-    &__events-grid{
-        width: 98%;
-        margin: 0 auto;
-        height: 400px;
-
-        display: grid;
-
-        grid-template-rows: 1fr;
-        grid-template-columns: 55% 1fr;
-        grid-gap: 30px; 
-
-        .daily-events{
-            width: 100%;
-            height: 100%;
-            background-color: white;
-
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-            &__event1{
-                position: relative;
-                z-index: 50;
-
-                &--front-side{
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../image/events/lights2.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    position: relative;
-                    transition: .3s ease-in;
-                    z-index: 110;
-
-
-                }
-
-                &--back-side{
-                    height: 100%;
-                    width: 100%;
-                    background-color: coral;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    text-align: center;
-                    z-index: -100;
-                    overflow: hidden;
-                    transition: .5s ease-out;
-                }
-            }
-
-            &__event2{
-                position: relative;
-                z-index: 10;
-                transition: .5s ease-out;
-
-
-                &--front-side{
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../image/events/redcross.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    transition: .3s ease-in;
-                    z-index: 20;
-                    text-align: center;
-                    position: relative;
-                }
-
-                &--back-side{
-                    background-color: coral;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -100;
-                    overflow: hidden;
-                    transition: .5s ease-out;
-                    text-align: center;
-                }
-
-
-            }
-
-            &__event3{
-                position: relative;
-                z-index: 10;
-                transition: .5s ease-out;
-                &--front-side{
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../image/events/pharmacy.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    transition: .3s ease-in;
-                    z-index: 20;
-                    text-align: center;
-                    position: relative;
-                }
-
-                &--back-side{
-                    background-color: coral;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -100;
-                    overflow: hidden;
-                    transition: .5s ease-out;
-                    text-align: center;
-                }
-                
-            }
-
-            &__event4{
-                position: relative;
-                z-index: 10;
-                transition: .5s ease-out;
-                &--front-side{
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../image/events/santa.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    transition: .3s ease-in;
-                    z-index: 20;
-                    text-align: center;
-                    position: relative;
-                }
-
-                &--back-side{
-                    background-color: coral;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -100;
-                    overflow: hidden;
-                    transition: .5s ease-out;
-                    text-align: center;
-                }
-            }
-
-            &__event5{
-                
-                position: relative;
-                z-index: 10;
-                transition: .5s ease-out;
-
-                &--front-side{
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../image/events/buffet.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    transition: .3s ease-in;
-                    z-index: 20;
-                    text-align: center;
-                    position: relative;
-                }
-
-                &--back-side{
-                    background-color: coral;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -100;
-                    overflow: hidden;
-                    transition: .5s ease-out;
-                    text-align: center;
-                }
-            }
-        }
+        grid-template-columns: repeat(12*1fr);
+        grid-gap: 30px;
         
-        .special-events{
+        .card--left{
+            grid-column: 1/7;
+        }
+
+        .card--right{
+            grid-column: 7/13;
+        }
+
+        .card{
+            transition: all .2s;
             width: 100%;
             height: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr;
-
-            &__event1{
-                position: relative;
-                transition: all .3s ease-in-out;
+            &__image{
                 
+                height: 296px;
+                overflow: hidden;
 
-                &--front{
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../image/events/mette1.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    position: relative;
-                    transition: all .3s ease-in-out;
-                    z-index: 100;
+                img{
+                height: 296px;
+                width: 100%;
+                transform: scale(1.1);
+                transition: all .3s;
 
+                    &:hover{
+                        transform: scale(1);
+                    }
                 }
-
-                &--back{
-                    background-color: coral;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 80;
-                    overflow: hidden;
-                    transition: all .3s ease-in-out;
-                    text-align: center;
-                }
-
-
             }
 
-            &__event2{
+            &__content{
                 width: 100%;
-                height: 100%;
+                height: 140px;
+                background-color: $color-white;
                 position: relative;
-                transition: all .3s ease-out;
+                padding: 24px;
+                box-sizing: border-box;
+                cursor: pointer;
                 
 
-                &--front{
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../image/events/choir.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    position: relative;
-                    transition: all .3s ease-out;
-
+                h3{
+                    font-size: 2.4rem;
+                    margin-bottom: 4px;
                 }
 
-                &--back{
-                    background-color: coral;
-                    width: 100%;
-                    height: 100%;
+                p{   
+                    font-size: 1.6rem;
+                    width: 90%;
+                }
+                .expand{
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -100;
-                    overflow: hidden;
-                    text-align: center;
-                    transition: all .3s ease-out;
+                    top: 50%;
+                    right: 30px;
+                    
+                    
+                    
+                    &--line{
+                        width: 25px;
+                         height: 3px;
+                         background-color: black;
+                    }
+
+                    .line-one{
+                        transform: rotate(90deg) translate(3px, 0px);
+                        transition: all .5s;
+                    }
+
+
                 }
             }
         }
-
     }
+
 
 }
 
@@ -355,13 +163,6 @@
 
         grid-gap: 50px;
 
-        // &--calendar{
-
-        // }
-
-        // &--workhours{
-
-        // }
     }
 
 }
@@ -430,7 +231,8 @@
         display: grid;
 
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 31% 31% 31%;
+        justify-content: center;
 
         grid-gap: 30px;
 
@@ -515,14 +317,6 @@
 
 
     }
-
-
-
-
-
-
-
-
 
 
 
