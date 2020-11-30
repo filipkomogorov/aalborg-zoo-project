@@ -7,12 +7,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Source Serif Pro', serif;
   background-image: linear-gradient(to bottom, #9AA759, #6A8C61, #3B5B3B);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  text-rendering: optimizeSpeed; }
 
 .open-one-front {
   width: 200% !important;
@@ -86,18 +88,18 @@ body {
 
 .snow {
   width: 100%;
-  height: 2850px;
+  height: 5700px;
   position: absolute;
   background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
   animation-name: snowing;
-  animation-duration: 40s;
+  animation-duration: 50s;
   animation-iteration-count: infinite; }
 
 @keyframes snowing {
   0% {
     background-position: 0px 0px, 500px 0px; }
   100% {
-    background-position: 700px 4000px, 230px 4000px; } }
+    background-position: 700px 5500px, 230px 5500px; } }
 
 .show-nav {
   left: 0 !important;
@@ -191,8 +193,9 @@ body {
 
 .heading-secondary {
   width: 100%;
-  margin: 50px auto 50px auto;
-  color: #fff; }
+  margin: 80px auto 80px auto;
+  color: #fff;
+  text-align: center; }
   .heading-secondary h2 {
     font-size: 5rem;
     font-weight: 500;
@@ -308,10 +311,14 @@ body {
         margin-right: 20px; }
         .section-header__content__nav ul > *:not(:first-child) {
           margin-left: 30px; }
-        .section-header__content__nav ul li {
-          display: inline-block;
-          font-size: 1.7rem;
-          text-transform: uppercase; }
+        .section-header__content__nav ul a {
+          text-decoration: none;
+          color: #f2f2f2; }
+          .section-header__content__nav ul a li {
+            display: inline-block;
+            font-size: 1.7rem; }
+        .section-header__content__nav ul:hover a:not(:hover) {
+          color: rgba(170, 170, 170, 0.397); }
       .section-header__content__nav .hamburgerBtn {
         position: absolute;
         top: 30px;
@@ -399,7 +406,8 @@ footer {
 .section-events {
   max-width: 114rem;
   margin: 0 auto;
-  margin-top: 100px; }
+  margin-top: 100px;
+  color: #3B5B3B; }
   .section-events__grid {
     width: 100%;
     height: 100%;
@@ -431,7 +439,7 @@ footer {
             transform: scale(1); }
       .section-events__grid .card__content {
         width: 100%;
-        height: 140px;
+        height: 130px;
         background-color: #f2f2f2;
         position: relative;
         padding: 24px;
@@ -439,18 +447,19 @@ footer {
         cursor: pointer; }
         .section-events__grid .card__content h3 {
           font-size: 2.4rem;
-          margin-bottom: 4px; }
+          margin-bottom: 10px; }
         .section-events__grid .card__content p {
           font-size: 1.6rem;
           width: 90%; }
         .section-events__grid .card__content .expand {
           position: absolute;
           top: 50%;
-          right: 30px; }
+          right: 30px;
+          transform: translateY(-50%); }
           .section-events__grid .card__content .expand--line {
             width: 25px;
             height: 3px;
-            background-color: black; }
+            background-color: #3B5B3B; }
           .section-events__grid .card__content .expand .line-one {
             transform: rotate(90deg) translate(3px, 0px);
             transition: all .5s; }

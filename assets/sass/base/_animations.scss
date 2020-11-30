@@ -99,20 +99,20 @@
 
 .snow{
     width: 100%;
-    height: 2850px;
+    height: 5700px;
     position: absolute;
     background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
     // z-index: 30000;
 
     animation-name: snowing;
-    animation-duration: 40s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     
 }
 
 @keyframes snowing{
     0%{ background-position: 0px 0px, 500px 0px}
-    100%{background-position: 700px 4000px, 230px 4000px}
+    100%{background-position: 700px 5500px, 230px 5500px}
 }
 
 // ========================================

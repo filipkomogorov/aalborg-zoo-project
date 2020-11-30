@@ -28,10 +28,18 @@
             </div>
             <div class="section-header__content__nav">
                 <ul id="nav">
-                    <li>Events</li>
-                    <li>Calendar</li>
-                    <li>Tickets</li>
-                    <li>Gallery</li>
+                    <a href="#events">
+                        <li>Events</li>
+                    </a>
+                    <a href="#program">
+                        <li>Calendar</li>
+                    </a>
+                    <a href="#tickets">
+                        <li>Tickets</li>
+                    </a>
+                    <a href="#gallery">
+                        <li>Gallery</li>
+                    </a>
                 </ul>
                 <div id="btnMenu" class="btn-hidden hamburgerBtn">
                     <div class="btnLine btnLine-1"></div>
@@ -76,12 +84,17 @@
         </div>
 
 
-        <section class="section-events">
+        <section class="section-events" id="events">
+
+
+            <div class="heading-secondary">
+                <h2>Daily Events</h2>
+            </div>
 
             <div class="section-events__grid grid-expanded">
                 <div class="card card--left" id="card-one-left">
                     <div class="card__image">
-                        <img src="assets/image/gallery/one.jpg" alt="first image">
+                        <img src="assets/image/lights.jpg" alt="first image">
                     </div>
 
 
@@ -99,7 +112,7 @@
 
                 <div class="card card--right" id="card-one-right">
                     <div class="card__image">
-                        <img src="assets/image/gallery/five.jpg" alt="first image">
+                        <img src="assets/image/santa.jpg" alt="first image">
                     </div>
 
 
@@ -137,97 +150,172 @@
                 </div>
             </div>
             <div class="section-events__grid">
-                <div class="card card--left">
+                <div class="card card--left" id="card-two-left">
                     <div class="card__image">
-                        <img src="assets/image/gallery/one.jpg" alt="first image">
+                        <img src="assets/image/redcross.jpg" alt="first image">
                     </div>
 
                     <div class="card__content" id="eventTwoLeft">
-                        <h3>Event Name</h3>
+                        <h3>Red Cross</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, id.</p>
                         <div class="expand">
-                            <div class="expand--line line-one"></div>
+                            <div class="expand--line line-one" id="lineTwoLeft"></div>
                             <div class="expand--line line-two"></div>
                         </div>
                     </div>
                 </div>
-                <div class="card card--right">
+                <div class="card card--right" id="card-two-right">
                     <div class="card__image">
-                        <img src="assets/image/gallery/one.jpg" alt="first image">
+                        <img src="assets/image/old-pharmacy.jpg" alt="first image">
                     </div>
 
 
                     <div class="card__content" id="eventTwoRight">
-                        <h3>Event Name</h3>
+                        <h3>The Old Pharmacy</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, id.</p>
                         <div class="expand">
-                            <div class="expand--line line-one"></div>
+                            <div class="expand--line line-one" id="lineTwoRight"></div>
                             <div class="expand--line line-two"></div>
                         </div>
                     </div>
+                </div>
+                <div class="info-event-left" id="infoTwoEventLeft">
+                    <p> Light walk in the zoo. An event that covers 90% of the Zoo. The event takes you on a journey of
+                        different sights, feelings and experiences.
+
+                        <br><br>
+
+                        This event was specially tailored to include quiet zones so you brain can relax and you can have
+                        an optimal experience.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae id molestiae
+                        consectetur repellat eveniet repellendus? Consequuntur veritatis odit consectetur in! Earum,
+                        quas tenetur. Animi cupiditate aspernatur deleniti aperiam praesentium!</p>
+
+                </div>
+                <div class="info-event-right" id="infoTwoEventRight">
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta fugiat delectus corrupti
+                        praesentium voluptatibus eveniet. Sunt amet porro neque delectus!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur accusamus optio.
+                        Harum ratione aliquid magni reprehenderit quidem sed deserunt ducimus quos voluptate illum
+                        recusandae veniam ab placeat excepturi, ipsam nemo iusto accusantium eveniet cupiditate
+                        repudiandae minus rem reiciendis blanditiis! Molestiae doloremque voluptatem inventore pariatur
+                        a. Ducimus quis rem, cumque debitis aliquid hic rerum ex natus qui, facilis, quasi officia!!</p>
                 </div>
             </div>
             <div class="section-events__grid">
-                <div class="card card--left">
+                <div class="card card--left" id="card-three-left">
                     <div class="card__image">
-                        <img src="assets/image/gallery/one.jpg" alt="first image">
+                        <img src="assets/image/buffet2.jpg" alt="first image">
                     </div>
 
                     <div class="card__content" id="eventThreeLeft">
-                        <h3>Event Name</h3>
+                        <h3>Christmas Buffet</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, id.</p>
                         <div class="expand">
-                            <div class="expand--line line-one"></div>
+                            <div class="expand--line line-one" id="lineThreeLeft"></div>
                             <div class="expand--line line-two"></div>
                         </div>
                     </div>
                 </div>
-                <div class="card card--right">
+                <div class="card card--right" id="card-three-right">
                     <div class="card__image">
-                        <img src="assets/image/gallery/one.jpg" alt="first image">
+                        <img src="assets/image/market2.jpg" alt="first image">
                     </div>
 
 
                     <div class="card__content" id="eventThreeRight">
-                        <h3>Event Name</h3>
+                        <h3>Christmas Market</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, id.</p>
                         <div class="expand">
-                            <div class="expand--line line-one"></div>
+                            <div class="expand--line line-one" id="lineThreeRight"></div>
                             <div class="expand--line line-two"></div>
                         </div>
                     </div>
                 </div>
+                <div class="info-event-left" id="infoThreeEventLeft">
+                    <p> Light walk in the zoo. An event that covers 90% of the Zoo. The event takes you on a journey of
+                        different sights, feelings and experiences.
+
+                        <br><br>
+
+                        This event was specially tailored to include quiet zones so you brain can relax and you can have
+                        an optimal experience.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae id molestiae
+                        consectetur repellat eveniet repellendus? Consequuntur veritatis odit consectetur in! Earum,
+                        quas tenetur. Animi cupiditate aspernatur deleniti aperiam praesentium!</p>
+
+                </div>
+                <div class="info-event-right" id="infoThreeEventRight">
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta fugiat delectus corrupti
+                        praesentium voluptatibus eveniet. Sunt amet porro neque delectus!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur accusamus optio.
+                        Harum ratione aliquid magni reprehenderit quidem sed deserunt ducimus quos voluptate illum
+                        recusandae veniam ab placeat excepturi, ipsam nemo iusto accusantium eveniet cupiditate
+                        repudiandae minus rem reiciendis blanditiis! Molestiae doloremque voluptatem inventore pariatur
+                        a. Ducimus quis rem, cumque debitis aliquid hic rerum ex natus qui, facilis, quasi officia!!</p>
+                </div>
             </div>
-            <div class="section-events__grid">
-                <div class="card card--left">
+
+            <div class="heading-secondary">
+                <h2>Special Events</h2>
+            </div>
+
+
+            <div class=" section-events__grid">
+                <div class="card card--left" id="card-four-left">
                     <div class="card__image">
-                        <img src="assets/image/gallery/one.jpg" alt="first image">
+                        <img src="assets/image/mette1.jpg" alt="first image">
                     </div>
 
                     <div class="card__content" id="eventFourLeft">
-                        <h3>Event Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, id.</p>
+                        <h3>Mette Blomsterberg</h3>
+                        <p>Mette Blomsterberg will be signing her new book - Min Jul.</p>
                         <div class="expand">
-                            <div class="expand--line line-one"></div>
+                            <div class="expand--line line-one" id="lineFourLeft"></div>
                             <div class="expand--line line-two"></div>
                         </div>
                     </div>
 
                 </div>
-                <div class="card card--right">
+                <div class="card card--right" id="card-four-right">
                     <div class="card__image">
-                        <img src="assets/image/gallery/one.jpg" alt="first image">
+                        <img src="assets/image/choir.jpg" alt="first image">
                     </div>
 
 
                     <div class="card__content" id="eventFourRight">
-                        <h3>Event Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, id.</p>
+                        <h3>Greenlandic Choir</h3>
+                        <p>Come and hear traditional and authentic Greenlandic Choir</p>
                         <div class="expand">
-                            <div class="expand--line line-one"></div>
+                            <div class="expand--line line-one" id="lineFourRIght"></div>
                             <div class="expand--line line-two"></div>
                         </div>
                     </div>
+                </div>
+                <div class="info-event-left" id="infoFourEventLeft">
+                    <p> Light walk in the zoo. An event that covers 90% of the Zoo. The event takes you on a journey of
+                        different sights, feelings and experiences.
+
+                        <br><br>
+
+                        This event was specially tailored to include quiet zones so you brain can relax and you can have
+                        an optimal experience.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae id molestiae
+                        consectetur repellat eveniet repellendus? Consequuntur veritatis odit consectetur in! Earum,
+                        quas tenetur. Animi cupiditate aspernatur deleniti aperiam praesentium!</p>
+
+                </div>
+                <div class="info-event-right" id="infoFourEventRight">
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta fugiat delectus corrupti
+                        praesentium voluptatibus eveniet. Sunt amet porro neque delectus!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur accusamus optio.
+                        Harum ratione aliquid magni reprehenderit quidem sed deserunt ducimus quos voluptate illum
+                        recusandae veniam ab placeat excepturi, ipsam nemo iusto accusantium eveniet cupiditate
+                        repudiandae minus rem reiciendis blanditiis! Molestiae doloremque voluptatem inventore pariatur
+                        a. Ducimus quis rem, cumque debitis aliquid hic rerum ex natus qui, facilis, quasi officia!!</p>
                 </div>
             </div>
 
@@ -236,7 +324,7 @@
 
 
 
-        <section class="section-program">
+        <section class="section-program" id="program">
 
 
             <div class="section-program__title heading-secondary">
@@ -251,7 +339,7 @@
 
         </section>
 
-        <div class="section-tickets__title heading-secondary">
+        <div class="section-tickets__title heading-secondary" id="tickets">
             <h2>
                 Get your entry here
             </h2>
@@ -310,7 +398,7 @@
             </div>
         </section>
 
-        <div class="section-gallery__title heading-secondary">
+        <div class="section-gallery__title heading-secondary" id="gallery">
             <h2>
                 Gallery
             </h2>
@@ -361,7 +449,7 @@
         <footer>
             <div class="footer-content">
                 <div class="footer-content__logo">
-                    <img src="assets/image/logo/logo_1.png">
+                    <img src="assets/image/logo/logo_1.png" alt="Footer Christmas Logo">
                 </div>
                 <div class="footer-content__grid">
                     <div class="footer-content__grid--column">
@@ -403,8 +491,8 @@
                     <div class="footer-content__grid--column">
                         <p><strong>Aalborg Zoo is a member of</strong><br>
                             <br>
-                            <img
-                                src="https://cms.aalborgzoo.dk/media/333ljdqh/european_association_of_zoos_and_aquaria.png?width=117&height=89&mode=max">
+                            <img src="https://cms.aalborgzoo.dk/media/333ljdqh/european_association_of_zoos_and_aquaria.png?width=117&height=89&mode=max"
+                                alt="Logo of European Association of zoos and aquaria">
                             <br>
                             <a href="https://aalborgzoo.dk/om-zoo/cookiepolitik">Cookies</a><br>
                             <br>
@@ -440,7 +528,7 @@
     <!-- GALLERY INVENTORY -->
     <div class="pop-up" id="lightsOne">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/one.jpg" alt="">
+            <img src="assets/image/gallery/one.jpg" alt="Image of Light">
         </div>
         <div class="arrow-back">
             <a href="#lightsNine"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
@@ -455,7 +543,7 @@
 
     <div class="pop-up" id="lightsTwo">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/two.jpg" alt="">
+            <img src="assets/image/gallery/two.jpg" alt="Image of Christmas at Zoo event">
         </div>
         <div class="arrow-back">
             <a href="#lightsOne"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
@@ -470,7 +558,7 @@
 
     <div class="pop-up" id="lightsThree">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/three.jpg" alt="">
+            <img src="assets/image/gallery/three.jpg" alt="Image of Christmas at Zoo event">
         </div>
         <div class="arrow-back">
             <a href="#lightsTwo"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
@@ -485,7 +573,7 @@
 
     <div class="pop-up" id="lightsFour">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/four.jpg" alt="">
+            <img src="assets/image/gallery/four.jpg" alt="Image of Christmas at Zoo event">
         </div>
         <div class="arrow-back">
             <a href="#lightsThree"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
@@ -500,7 +588,7 @@
 
     <div class="pop-up" id="lightsFive">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/five.jpg" alt="">
+            <img src="assets/image/gallery/five.jpg" alt="Image of Christmas at Zoo event">
         </div>
         <div class="arrow-back">
             <a href="#lightsFour"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
@@ -515,7 +603,7 @@
 
     <div class="pop-up" id="lightsSix">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/six.jpg" alt="">
+            <img src="assets/image/gallery/six.jpg" alt="Image of Christmas at Zoo event">
         </div>
         <div class="arrow-back">
             <a href="#lightsFive"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
@@ -530,7 +618,7 @@
 
     <div class="pop-up" id="lightsSeven">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/seven.jpg" alt="">
+            <img src="assets/image/gallery/seven.jpg" alt="Image of Christmas at Zoo event">
         </div>
         <div class="arrow-back">
             <a href="#lightsSix"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
@@ -545,7 +633,7 @@
 
     <div class="pop-up" id="lightsEight">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/eight.jpg" alt="">
+            <img src="assets/image/gallery/eight.jpg" alt="Image of Christmas at Zoo event">
         </div>
         <div class="arrow-back">
             <a href="#lightsSeven"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
@@ -559,7 +647,7 @@
     </div>
     <div class="pop-up" id="lightsNine">
         <div class="pop-up__content">
-            <img src="assets/image/gallery/nine.jpg" alt="">
+            <img src="assets/image/gallery/nine.jpg" alt="Image of Christmas at Zoo event">
         </div>
         <div class="arrow-back">
             <a href="#lightsEight"><i class="far fa-arrow-alt-circle-left fa-4x"></i></a>
