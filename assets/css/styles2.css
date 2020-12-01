@@ -6,12 +6,6 @@ MEDIA QUERIES
 ===============================================
  */
 
-     /* LAPTOPS */
-@media (max-width: 1200px){
-
-}
-
-
  /* LAPTOPS 1200px*/
  @media (max-width: 1200px){
   .section-events{
@@ -184,13 +178,6 @@ MEDIA QUERIES
 }
 
 
-
-.daily-program h3,
-.special-program h3{
-  font-size: 3rem;
-}
-
-
 }
 
 
@@ -206,26 +193,38 @@ MEDIA QUERIES
 
 @media (max-width: 820px){
 
-  /* eventEVENTS */
+
+  /* EVENTS */
 
   .section-events{
-    
-    max-width: 660px;
+    width: 480px;
     margin: 0 auto;
+  }
+
+  .section-events__grid{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(12*1fr) !important;
+    grid-template-rows: min-content auto
 
   }
-  
-  .section-events__events-grid{
 
-    max-width: 98%;
-    margin: 0 auto;
-    height: 350px;
-     
-    grid-template-rows: 400px 400px;
-    grid-template-columns: 100%;
-    
-    grid-gap: 0px;
-   }
+.card--left{
+    grid-row: 1/2 !important;
+    grid-column: 1/13 !important;
+}
+
+.card--right{
+  grid-row: 2/3;
+  grid-column: 1/13 !important;
+}
+
+.info-event-left{
+
+  grid-row: 2/3 !important;
+  grid-column: 1/13;
+  
+}
+ 
 
 
    /* TICKETS */
