@@ -53,6 +53,18 @@ MEDIA QUERIES
  height: auto;
  object-fit: contain;
 }
+
+
+.footer-content{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* SNOW */
+
+.snow{
+  height: 5585px;
+}
  
  }
 
@@ -89,9 +101,15 @@ MEDIA QUERIES
     margin-bottom: 40px;
   }
 
-  .section-header__content__nav ul li:first-child{
+  .section-header__content__nav ul a{
+    color:  #1e3040;
+  }
+
+  .section-header__content__nav ul a:first-child{
+    margin-left: 30px;
     margin-top: 100px;
   }
+
 
   /* HERO / VIDEO */
 
@@ -177,6 +195,34 @@ MEDIA QUERIES
   margin-bottom: 20px;
 }
 
+.footer-content{
+  min-width: 680px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+}
+
+.footer-content__grid{
+    display: block !important;
+    
+}
+
+.footer-content__grid--column{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.footer-content__bottom{
+  display: block !important;
+}
+
+
+/* SNOW */
+
+.snow{
+  height: 6035px;
+}
 
 }
 
@@ -186,13 +232,24 @@ MEDIA QUERIES
   /*  HERO VIDEO */
 
   .section-hero{
-    height: 32rem;
+    height: 25rem;
+  }
+
+  /* SNOW */
+
+  .snow{
+    height: 5935px;
   }
 }
 
 
 @media (max-width: 820px){
 
+  /* Headings */
+
+ .heading-primary {
+   margin-top: 0;
+ }
 
   /* EVENTS */
 
@@ -257,6 +314,34 @@ MEDIA QUERIES
     font-size: 1.6rem;
   }
 
+  /* GALLERY */
+
+  .section-gallery{
+    width:100vw;
+    
+  }
+  
+    .section-gallery__grid{
+      display: flex;
+      overflow-x: auto;
+      width: 100vw;
+    }
+  
+    .section-gallery__grid--style a img{
+      width: 90vw;
+      height: 70vh;
+  
+    }
+    .section-gallery__grid--style a{
+      pointer-events: none;
+    }
+
+      /* SNOW */
+  
+  .snow{
+    height: 8400px;
+  }
+   
 
   }
 
@@ -266,6 +351,22 @@ MEDIA QUERIES
     max-width: 480px;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .section-hero__video--content{
+    display: none;
+  }
+
+  .hero-background{
+    display: block !important;
+  }
+
+  .heading-primary {
+    margin-top: 150px;
+  }
+
+  .snow{
+    height: 8500px;
   }
 
 
@@ -286,9 +387,15 @@ MEDIA QUERIES
   }
 
   .section-tickets__grid{
+    width: 100%;
+    margin: 0 auto;
+    margin-left: -13px;
+
 
    grid-template-rows: 1fr 1fr 1fr;
    grid-template-columns: 300px;
+
+   grid-column-gap: 0px;
 
  }
 
@@ -306,6 +413,16 @@ MEDIA QUERIES
    padding: 10px 20px;
    font-size: 1.6rem;
  }
+
+ .some{
+  display: none;
+}
+
+/* SNOW */
+
+.snow{
+  height: 8600px;
+}
   
 
 }

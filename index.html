@@ -17,7 +17,7 @@
 
 <body>
 
-    <section id="snow">
+    <section id="snow" class="snow">
         <!-- for snowing effect -->
     </section>
 
@@ -57,19 +57,19 @@
 
     <main>
 
-
-
         <section class="section-hero">
 
-            <div class="section-hero__spacing-before"></div>
+            <!-- <div class="section-hero__spacing-before"></div> -->
             <div class="section-hero__video">
                 <video class="section-hero__video--content" muted="muted" autoplay="autoplay" loop="loop" playsinline
                     preload="metadata">
                     <source src="assets/video/video_small.mp4">
-                    <!-- <source src="assets/video/video_large.mp4"> -->
                 </video>
+                <div class="hero-background">
+                    <img src="assets/image/cards/first.jpg" alt="Image of raindear">
+                </div>
             </div>
-            <div class="section-hero__spacing-after"></div>
+            <!-- <div class="section-hero__spacing-after"></div> -->
 
         </section>
 
@@ -324,7 +324,7 @@
 
 
 
-        <section class="section-program" id="program">
+        <section class="section-program">
 
 
             <div class="section-program__title heading-secondary">
@@ -334,9 +334,23 @@
             </div>
 
             <div class="section-program__grid">
-
+                <div class="section-program__grid--months-names">
+                    <h3 class="title_nov">Nov 2020</h3>
+                    <h3 class="title_dec">Dec 2020</h3>
+                </div>
+                <div class="section-program__grid--months-images">
+                    <img class="section_program-calendar-img" src="/assets/image/calendar/calendar_nov.png">
+                    <img class="section_program-calendar-img" src="/assets/image/calendar/calendar_dec.png">
+                </div>
+                <div class="section-program__grid--workhours">
+                    <p><img src="assets/image/calendar/green.png">Zoo opening hours: 10.00 - 15.00<br>
+                        <img src="assets/image/calendar/red.png">Closed: 15.00 - 16.00<br>
+                        <img src="assets/image/calendar/yellow.png">Christmas event opening hours: 16.00 - 21.00<br>
+                        <img src="assets/image/calendar/blue.png">Christmas Eve<br>
+                        <img src="assets/image/calendar/gingerbread_1.png">Meet Mette Blomsterberg<br>
+                        <img src="assets/image/calendar/angel.png">Greenlandic Choir</p>
+                </div>
             </div>
-
         </section>
 
         <div class="section-tickets__title heading-secondary" id="tickets">

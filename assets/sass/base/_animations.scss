@@ -99,7 +99,7 @@
 
 .snow{
     width: 100%;
-    height: 5700px;
+    height: 5725px;
     position: absolute;
     background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
     // z-index: 30000;
@@ -112,7 +112,7 @@
 
 @keyframes snowing{
     0%{ background-position: 0px 0px, 500px 0px}
-    100%{background-position: 700px 5500px, 230px 5500px}
+    100%{background-position: 700px 5550px, 230px 5550px}
 }
 
 // ========================================
@@ -222,4 +222,8 @@
 
 .card-right-move{
     grid-row: 3/4 !important;
+}
+
+.blq{
+    display: none;
 }

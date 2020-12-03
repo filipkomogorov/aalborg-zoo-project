@@ -14,8 +14,10 @@ html{
 
 body{
     font-family: 'Source Serif Pro', serif;
-    background-image: linear-gradient(to bottom, #9AA759,#6A8C61, #3B5B3B);
+    background-color: $color-blue-dark;
+
     background-repeat: no-repeat;
     text-rendering: optimizeSpeed;
+    overflow-x: hidden;
 }
 

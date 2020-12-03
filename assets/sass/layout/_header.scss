@@ -41,13 +41,14 @@
                     display: inline-block;
                     font-size: 1.7rem;
 
+                    &:hover{
+                        color: $color-red-light;
+                    }
+
                     
                 }
             }
 
-            // &:hover a:not(:hover){
-            //     color: rgba(170, 170, 170, 0.582);
-            // }
         }
 
             .hamburgerBtn{
