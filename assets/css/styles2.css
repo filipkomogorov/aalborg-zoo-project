@@ -60,6 +60,58 @@ MEDIA QUERIES
   margin: 0 auto;
 }
 
+/* CALENDAR */
+
+.section-program{
+  max-width: 680px;
+
+}
+
+.section-program__grid{
+  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.section-program__grid--months-images{
+  grid-row: 1/2;
+  grid-column: 1/13;
+}
+
+.section-program__grid--workhours{
+  grid-row: 2/3;
+  grid-column: 1/13;
+  justify-self: center;
+
+  grid-template-columns: 35% 65%;
+}
+
+.img-november,
+.img-december{
+  display: grid;
+  justify-self: center;
+}
+
+.workhours-images,
+.workhours-text{
+  grid-gap: 10px;
+  justify-self: center;
+}
+
+.workhours-images{
+  justify-self: end;
+  margin-right: 20px;
+}
+
+.workhours-text{
+  justify-self: start;
+  margin-left: 20px;
+}
+
+.opening-hours{
+  margin: 0 auto 50px auto !important;
+  height: 50px;
+}
+
 /* SNOW */
 
 .snow{
@@ -78,6 +130,8 @@ MEDIA QUERIES
   .btn-hidden{
     visibility: visible;
   }
+
+
 
   .section-header__content__nav ul{
     width: 50vw;
@@ -145,6 +199,17 @@ MEDIA QUERIES
   grid-row-gap: 50px;
  }
 
+ /* CALENDAR */
+
+ .section-program{
+  max-width: 680px;
+}
+
+.opening-hours{
+  margin-top: 50px;
+}
+
+
  /* TICKETS */
 
  .section-tickets{
@@ -194,6 +259,14 @@ MEDIA QUERIES
 .heading-tertiary{
   margin-bottom: 20px;
 }
+
+.heading-secondary h2{
+  font-size: 4rem;
+}
+.heading-secondary h3{
+  font-size: 3rem;
+}
+
 
 .footer-content{
   min-width: 680px;
@@ -369,11 +442,51 @@ MEDIA QUERIES
     height: 8500px;
   }
 
+  /* CALENDAR */
 
+  .section-program__grid{
+    margin-bottom: 50px;
+  }
+
+  .img-november img,
+  .img-december img{
+    width: 400px !important;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .section-program__months{
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .title_nov{
+    margin-right: 130px !important;
+  }
+
+  .title_nov,
+  .title_dec{
+    font-size: 3rem !important;
+  }
+
+  /* TYPOGRAPHY */
+
+  .heading-secondary h3{
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px){
 
+  /* HERO */
+
+  .section-hero{
+    width: 100%;
+  }
+
+  
+
+  /* EVENTS */
   .section-events{
     max-width: 350px;
     margin: 0 auto;
@@ -414,6 +527,52 @@ MEDIA QUERIES
    font-size: 1.6rem;
  }
 
+ /* CALENDAR */
+
+ .section-program{
+  max-width: 450px;
+
+}
+
+.section-program__grid--months-images img{
+  width: 350px !important;
+  height: auto;
+  margin: 0 auto;
+}
+
+.workhours-images,
+.workhours-text{
+  grid-gap: 10px;
+  justify-self: center;
+}
+
+.workhours-images{
+  justify-self: end;
+  margin-right: 20px;
+}
+
+.workhours-images img{
+  height: 40px !important;
+  width: auto;
+}
+
+.workhours-text{
+  justify-self: start;
+  margin-left: 20px;
+}
+
+.workhours-text h5{
+  font-size: 1.4rem !important;
+}
+
+.opening-hours{
+  margin: 0 auto 50px auto !important;
+  height: 50px;
+  font-size: 2rem !important;
+}
+
+
+
  .some{
   display: none;
 }
@@ -422,6 +581,31 @@ MEDIA QUERIES
 
 .snow{
   height: 8600px;
+}
+
+/* TYPOGRAPHY */
+
+.heading-primary h1{
+  font-size: 3rem;
+}
+
+.heading-primary{
+  margin-top: 0;
+}
+
+.heading-tertiary h3{
+  font-size: 2rem;
+}
+
+.heading-tertiary{
+  margin-bottom: 20px;
+}
+
+.heading-secondary h2{
+  font-size: 3rem;
+}
+.heading-secondary h3{
+  font-size: 3rem;
 }
   
 

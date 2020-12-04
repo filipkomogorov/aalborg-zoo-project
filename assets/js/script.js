@@ -6,12 +6,32 @@
 var snowButton = document.getElementById('snowBtn');
 var snow = document.getElementById("snow");
 
+snowButton.addEventListener('click', snowing)
+
+function snowing() {
+    snow.classList.toggle('snow');
+}
+
+
 // ======================================
 //  Navigation 
 // ======================================
 
 var hamburgerMenu = document.getElementById("btnMenu");
 var navigation = document.getElementById("nav");
+
+
+hamburgerMenu.addEventListener('click', showNav)
+hamburgerMenu.addEventListener('click', btnAnimation)
+
+
+function showNav() {
+    navigation.classList.toggle("show-nav")
+}
+
+function btnAnimation() {
+    hamburgerMenu.classList.toggle("btn-animation")
+}
 
 // ======================================
 //  EVENTS 
@@ -25,7 +45,7 @@ document.getElementById('eventOneLeft').addEventListener('click', function () {
     document.getElementById('lineOneLeft').classList.toggle('line-animation');
 
     if (window.innerWidth < 820) {
-        document.getElementById('card-one-right').classList.toggle('blq');
+        document.getElementById('card-one-right').classList.toggle('showAndHide');
     }
 })
 
@@ -43,7 +63,7 @@ document.getElementById('eventTwoLeft').addEventListener('click', function () {
     document.getElementById('card-two-left').classList.toggle('card-expanded');
     document.getElementById('lineTwoLeft').classList.toggle('line-animation');
     if (window.innerWidth < 820) {
-        document.getElementById('card-two-right').classList.toggle('blq');
+        document.getElementById('card-two-right').classList.toggle('showAndHide');
     }
 })
 
@@ -60,7 +80,7 @@ document.getElementById('eventThreeLeft').addEventListener('click', function () 
     document.getElementById('card-three-left').classList.toggle('card-expanded');
     document.getElementById('lineThreeLeft').classList.toggle('line-animation');
     if (window.innerWidth < 820) {
-        document.getElementById('card-three-right').classList.toggle('blq');
+        document.getElementById('card-three-right').classList.toggle('showAndHide');
     }
 })
 
@@ -77,7 +97,7 @@ document.getElementById('eventFourLeft').addEventListener('click', function () {
     document.getElementById('card-four-left').classList.toggle('card-expanded');
     document.getElementById('lineFourLeft').classList.toggle('line-animation');
     if (window.innerWidth < 820) {
-        document.getElementById('card-four-right').classList.toggle('blq');
+        document.getElementById('card-four-right').classList.toggle('showAndHide');
     }
 })
 
@@ -89,38 +109,27 @@ document.getElementById('eventFourRight').addEventListener('click', function () 
 
 
 // ======================================
-//  EVENT LISTENERS
+//  CALENDAR
 // ======================================
 
+document.getElementById('clickNovember').addEventListener('click', function () {
+    document.getElementById('imgNovember').classList.toggle('showAndHide');
+    document.getElementById('imgDecember').classList.toggle('showAndHide');
+    document.getElementById('clickNovember').classList.toggle('calendarColors');
+    document.getElementById('clickDecember').classList.toggle('calendarColors');
 
-snowButton.addEventListener('click', snowing)
+})
 
-hamburgerMenu.addEventListener('click', showNav)
-hamburgerMenu.addEventListener('click', btnAnimation)
+document.getElementById('clickDecember').addEventListener('click', function () {
+    document.getElementById('imgNovember').classList.toggle('showAndHide');
+    document.getElementById('imgDecember').classList.toggle('showAndHide');
+    document.getElementById('clickNovember').classList.toggle('calendarColors');
+    document.getElementById('clickDecember').classList.toggle('calendarColors');
+})
 
-
-
-// ======================================
-//  TOGGLE FUNCTIONS
-// ======================================
-
-
-
-function snowing() {
-    snow.classList.toggle('snow');
-}
-
-function showNav() {
-    navigation.classList.toggle("show-nav")
-}
-
-function btnAnimation() {
-    hamburgerMenu.classList.toggle("btn-animation")
-}
-
-function expandOneLeft() {
-    infoOneEventLeft.classList.toggle('grid-show')
-}
+// function expandOneLeft() {
+//     infoOneEventLeft.classList.toggle('grid-show')
+// }
 
 
 

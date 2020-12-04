@@ -99,10 +99,10 @@
 
 .snow{
     width: 100%;
-    height: 5725px;
+    height: 6025px;
     position: absolute;
     background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
-    // z-index: 30000;
+    z-index: -1;
 
     animation-name: snowing;
     animation-duration: 50s;
@@ -112,7 +112,7 @@
 
 @keyframes snowing{
     0%{ background-position: 0px 0px, 500px 0px}
-    100%{background-position: 700px 5550px, 230px 5550px}
+    100%{background-position: 700px 6250px, 230px 6050px}
 }
 
 // ========================================
@@ -224,6 +224,14 @@
     grid-row: 3/4 !important;
 }
 
-.blq{
-    display: none;
+.showAndHide{
+    display: none !important;
+}
+
+.calendarColors{
+    color: white !important;
+
+    &:hover{
+        color: white !important;
+    }
 }
