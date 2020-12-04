@@ -89,10 +89,10 @@ body {
 
 .snow {
   width: 100%;
-  height: 6025px;
+  height: 6180px;
   position: absolute;
   background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
-  z-index: -1;
+  z-index: 0;
   animation-name: snowing;
   animation-duration: 50s;
   animation-iteration-count: infinite; }
@@ -101,7 +101,7 @@ body {
   0% {
     background-position: 0px 0px, 500px 0px; }
   100% {
-    background-position: 700px 6250px, 230px 6050px; } }
+    background-position: 700px 6200px, 230px 6200px; } }
 
 .show-nav {
   left: 0 !important;
@@ -221,8 +221,9 @@ body {
     margin: 0;
     padding: 15px 20px 20px 20px; }
   .heading-tertiary p {
-    font-size: 1.5rem;
-    padding: 0px 30px 10px 30px; }
+    font-size: 1.6rem;
+    padding: 0px 30px 10px 30px;
+    line-height: 150%; }
 
 .heading-events h4 {
   font-size: 2.5rem;
@@ -284,9 +285,12 @@ body {
     font-size: 1.6rem;
     color: #f2f2f2;
     padding: 10px 20px;
-    border-radius: 3px;
-    background-image: linear-gradient(to right, #6A8C61, #3B5B3B);
+    border-radius: 3px !important;
+    border-collapse: collapse;
+    background-color: #618762;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); }
+    .card-content-1__btn a:hover {
+      filter: brightness(120%); }
 
 .btn-hidden {
   visibility: hidden; }
@@ -495,10 +499,14 @@ footer {
       display: inline;
       text-transform: uppercase; }
     .section-program__months .title_dec {
+      position: relative;
+      z-index: 99;
       color: #727272; }
       .section-program__months .title_dec:hover {
         color: #6e3838; }
     .section-program__months .title_nov {
+      position: relative;
+      z-index: 99;
       margin-right: 170px;
       color: #727272; }
       .section-program__months .title_nov:hover {
@@ -580,6 +588,7 @@ footer {
       justify-self: center;
       position: relative;
       text-align: center;
+      border-radius: 3px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .section-gallery__title {

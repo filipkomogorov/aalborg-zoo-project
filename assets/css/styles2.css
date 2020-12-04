@@ -115,7 +115,7 @@ MEDIA QUERIES
 /* SNOW */
 
 .snow{
-  height: 5585px;
+  height: 6405px;
 }
  
  }
@@ -294,7 +294,7 @@ MEDIA QUERIES
 /* SNOW */
 
 .snow{
-  height: 6035px;
+  height: 6880px !important;
 }
 
 }
@@ -311,7 +311,7 @@ MEDIA QUERIES
   /* SNOW */
 
   .snow{
-    height: 5935px;
+    height: 9100px !important;
   }
 }
 
@@ -412,7 +412,7 @@ MEDIA QUERIES
       /* SNOW */
   
   .snow{
-    height: 8400px;
+    height: 7600px;
   }
    
 
@@ -442,6 +442,10 @@ MEDIA QUERIES
     height: 8500px;
   }
 
+  .section-snow h6{
+    font-size: 4rem !important;
+  }
+
   /* CALENDAR */
 
   .section-program__grid{
@@ -461,7 +465,7 @@ MEDIA QUERIES
   }
 
   .title_nov{
-    margin-right: 130px !important;
+    margin-right: 110px !important;
   }
 
   .title_nov,
@@ -571,6 +575,11 @@ MEDIA QUERIES
   font-size: 2rem !important;
 }
 
+.title_nov{
+  margin-left: 5px;
+  margin-right: 85px !important;
+}
+
 
 
  .some{
@@ -580,7 +589,7 @@ MEDIA QUERIES
 /* SNOW */
 
 .snow{
-  height: 8600px;
+  height: 8900px !important;
 }
 
 /* TYPOGRAPHY */

@@ -158,7 +158,7 @@
     max-width: 114rem;
     margin: 0 auto;
     // background-color: $color-white;
-
+    
     &__title{
         background-color: #5b885d;
         padding: 20px 0;
@@ -177,6 +177,8 @@
         }
 
         .title_dec{
+            position: relative;
+            z-index: 99;
             color: rgb(114, 114, 114);
             &:hover{
                 color: rgb(110, 56, 56);
@@ -184,6 +186,8 @@
         }
 
         .title_nov{
+            position: relative;
+            z-index: 99;
             margin-right: 170px;
             color: rgb(114, 114, 114);
             &:hover{
@@ -304,6 +308,7 @@
         height: 400px;
         margin: 0 auto;
         position: relative;
+        
 
         display: grid;
 
@@ -323,6 +328,7 @@
             justify-self: center;
             position: relative;
             text-align: center;
+            border-radius: 3px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
         }

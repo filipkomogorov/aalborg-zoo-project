@@ -13,6 +13,8 @@
     &__text{
         height: 100px;
         display: block;
+
+        
     }
 
     &__btn{
@@ -30,9 +32,14 @@
             font-size: 1.6rem;
             color: $color-white;
             padding: 10px 20px;
-            border-radius: 3px;
-            background-image: linear-gradient(to right,#6A8C61, #3B5B3B);
+            border-radius: 3px !important;
+            border-collapse: collapse;
+            background-color: #618762;
             box-shadow: 3px 3px 6px rgba(0,0,0, .5);
+
+            &:hover{
+                filter: brightness(120%);
+            }
 
         }
     }
