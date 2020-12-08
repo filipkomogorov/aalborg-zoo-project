@@ -6,7 +6,7 @@
 var snowButton = document.getElementById('snowBtn');
 var snow = document.getElementById("snow");
 
-snowButton.addEventListener('click', snowing)
+snowButton.addEventListener('click', snowing);
 
 function snowing() {
     snow.classList.toggle('snow');
@@ -39,7 +39,7 @@ function btnAnimation() {
 
 // EVENT-1
 
-document.getElementById('eventOneLeft').addEventListener('click', function () {
+document.getElementById('card-one-left').addEventListener('click', function () {
     document.getElementById('infoOneEventLeft').classList.toggle('grid-show');
     document.getElementById('card-one-left').classList.toggle('card-expanded');
     document.getElementById('lineOneLeft').classList.toggle('line-animation');
@@ -49,7 +49,7 @@ document.getElementById('eventOneLeft').addEventListener('click', function () {
     }
 })
 
-document.getElementById('eventOneRight').addEventListener('click', function () {
+document.getElementById('card-one-right').addEventListener('click', function () {
     document.getElementById('infoOneEventRight').classList.toggle('grid-show');
     document.getElementById('card-one-right').classList.toggle('card-expanded');
     document.getElementById('lineOneRight').classList.toggle('line-animation');
@@ -58,7 +58,7 @@ document.getElementById('eventOneRight').addEventListener('click', function () {
 
 // EVENT-2
 
-document.getElementById('eventTwoLeft').addEventListener('click', function () {
+document.getElementById('card-two-left').addEventListener('click', function () {
     document.getElementById('infoTwoEventLeft').classList.toggle('grid-show');
     document.getElementById('card-two-left').classList.toggle('card-expanded');
     document.getElementById('lineTwoLeft').classList.toggle('line-animation');
@@ -67,7 +67,7 @@ document.getElementById('eventTwoLeft').addEventListener('click', function () {
     }
 })
 
-document.getElementById('eventTwoRight').addEventListener('click', function () {
+document.getElementById('card-two-right').addEventListener('click', function () {
     document.getElementById('infoTwoEventRight').classList.toggle('grid-show');
     document.getElementById('card-two-right').classList.toggle('card-expanded');
     document.getElementById('lineTwoRight').classList.toggle('line-animation');
@@ -75,7 +75,7 @@ document.getElementById('eventTwoRight').addEventListener('click', function () {
 
 // EVENT-3
 
-document.getElementById('eventThreeLeft').addEventListener('click', function () {
+document.getElementById('card-three-left').addEventListener('click', function () {
     document.getElementById('infoThreeEventLeft').classList.toggle('grid-show');
     document.getElementById('card-three-left').classList.toggle('card-expanded');
     document.getElementById('lineThreeLeft').classList.toggle('line-animation');
@@ -84,7 +84,7 @@ document.getElementById('eventThreeLeft').addEventListener('click', function () 
     }
 })
 
-document.getElementById('eventThreeRight').addEventListener('click', function () {
+document.getElementById('card-three-right').addEventListener('click', function () {
     document.getElementById('infoThreeEventRight').classList.toggle('grid-show');
     document.getElementById('card-three-right').classList.toggle('card-expanded');
     document.getElementById('lineThreeRight').classList.toggle('line-animation');
@@ -92,7 +92,7 @@ document.getElementById('eventThreeRight').addEventListener('click', function ()
 
 // EVENT-4
 
-document.getElementById('eventFourLeft').addEventListener('click', function () {
+document.getElementById('card-four-left').addEventListener('click', function () {
     document.getElementById('infoFourEventLeft').classList.toggle('grid-show');
     document.getElementById('card-four-left').classList.toggle('card-expanded');
     document.getElementById('lineFourLeft').classList.toggle('line-animation');
@@ -101,7 +101,7 @@ document.getElementById('eventFourLeft').addEventListener('click', function () {
     }
 })
 
-document.getElementById('eventFourRight').addEventListener('click', function () {
+document.getElementById('card-four-right').addEventListener('click', function () {
     document.getElementById('infoFourEventRight').classList.toggle('grid-show');
     document.getElementById('card-four-right').classList.toggle('card-expanded');
     document.getElementById('lineFourRight').classList.toggle('line-animation');
@@ -126,10 +126,6 @@ document.getElementById('clickDecember').addEventListener('click', function () {
     document.getElementById('clickNovember').classList.toggle('calendarColors');
     document.getElementById('clickDecember').classList.toggle('calendarColors');
 })
-
-// function expandOneLeft() {
-//     infoOneEventLeft.classList.toggle('grid-show')
-// }
 
 
 

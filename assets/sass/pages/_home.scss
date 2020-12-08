@@ -40,7 +40,7 @@
 
 .section-snow{
     position: fixed;
-    z-index: 9999;
+    z-index: 1;
     
     h6{
         font-size: 6rem;
@@ -50,6 +50,16 @@
         &:hover{
             cursor: pointer;
         }
+    }
+}
+
+.covid{
+    position: fixed;
+    margin-top: 150px;
+    z-index: 1;
+
+    img{
+        height: 55px;
     }
 }
 
@@ -85,6 +95,7 @@
             transition: all .2s;
             width: 100%;
             height: 100%;
+            cursor: pointer;
             overflow: hidden;
             border-radius: 5px;
             
@@ -114,7 +125,7 @@
                 position: relative;
                 padding: 24px;
                 box-sizing: border-box;
-                cursor: pointer;
+                
                 
 
                 h3{
@@ -150,9 +161,7 @@
         }
     }
 
-
 }
-
 
 .section-program{
     max-width: 114rem;
@@ -160,12 +169,11 @@
     // background-color: $color-white;
     
     &__title{
-        background-color: #5b885d;
+        background-color: $color-green-bg;
         padding: 20px 0;
     }
 
     &__months{
-        margin-left: 35px;
         width: 100%;
         height: 100%;
         
@@ -207,7 +215,7 @@
         display: grid;
 
         grid-template-rows: 1fr;
-        grid-template-columns: repeat(12*1fr);
+        grid-template-columns: repeat(12,1fr);
         grid-gap: 30px;
 
 
@@ -217,7 +225,7 @@
             height: 100%;
             position: relative;
 
-            grid-column: 2/6;
+            grid-column: 1/7;
 
             .img-november{
 
@@ -242,7 +250,7 @@
         &--workhours{
             width: 100%;
             height: 100%;
-            grid-column: 7/13;
+            grid-column: 9/13;
             color: $color-white;
 
             display: grid;
@@ -276,14 +284,11 @@
                 grid-template-rows: repeat(6*50px);
 
                 h5{
-                    font-size: 2rem;
+                    font-size: 1.7rem;
                     line-height: 50px;
                 }
             }
-
-
         }
-
     }
 
 }
@@ -291,7 +296,7 @@
 
 .section-tickets__title{
     width: 100%;
-    background-color: #5b885d;
+    background-color: $color-green-bg;
     margin-bottom: 100px;
     padding: 20px 0;
 }
@@ -338,7 +343,7 @@
 
 .section-gallery__title{
     width: 100%;
-    background-color: #4a754c;
+    background-color:$color-green-bg;
     padding: 20px 0;
 }
 
@@ -387,7 +392,75 @@
     }
 }
 
+// COVID
 
+.covid__pop-up{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.8);
+    visibility: hidden;
+    transform: all  .3s ease-in-out;
+    
+
+    &--content{
+        width: 80%;
+        height: 65vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 30px;
+        background-color: $color-blue-dark;
+        text-align: center;
+        color: $color-white;
+        overflow: hidden;
+
+        h3{
+            font-size: 5rem;
+            margin-bottom: 50px;
+        }
+
+        p{
+            width: 80%;
+            margin: 0 auto;
+           font-size: 2rem;
+           line-height: 150%;
+        }
+
+        ul{
+            margin-top: 50px;
+
+
+            li {
+                list-style: none;
+                font-size: 1.7rem;
+                margin-bottom: 15px;
+
+                span{
+                    margin-right: 20px;
+                    font-size: 2rem;
+                    color: $color-red-dark;
+                }
+            }
+        }
+    }
+
+    .covid__closing-tag{
+        position: absolute;
+        top: 20%;
+        right: 12%;
+
+        a{
+            color: $color-white;
+        }
+    }
+    
+}
 
 .pop-up{
     width: 100%;
@@ -464,3 +537,7 @@
     visibility: visible;
   }
   
+.covid__pop-up:target{
+    opacity: 1;
+    visibility: visible;
+}

@@ -28,7 +28,9 @@
             float: right;
             top: 100px;
             
+            
             ul{
+                z-index: 999999;
                 list-style: none;
                 margin-right: 20px;
                 &>*:not(:first-child){
@@ -44,10 +46,8 @@
                     font-size: 1.7rem;
 
                     &:hover{
-                        color: $color-red-light;
+                        color: $color-red-dark;
                     }
-
-                    
                 }
             }
 

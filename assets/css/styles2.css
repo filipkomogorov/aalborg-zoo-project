@@ -112,6 +112,11 @@ MEDIA QUERIES
   height: 50px;
 }
 
+.title_nov{
+  margin-left: 40px;
+  margin-right: 160px !important;
+}
+
 /* SNOW */
 
 .snow{
@@ -297,6 +302,16 @@ MEDIA QUERIES
   height: 6880px !important;
 }
 
+/* COVID */
+
+.covid__pop-up h3{
+  font-size: 3rem;
+}
+
+.covid__pop-up p,
+.covid__pop-up ul li{
+  font-size: 1.6rem;
+}
 }
 
 
@@ -414,6 +429,17 @@ MEDIA QUERIES
   .snow{
     height: 7600px;
   }
+
+  /* COVID */
+
+  .covid__pop-up h3{
+    font-size: 2.5rem;
+  }
+  
+  .covid__pop-up p,
+  .covid__pop-up ul li{
+    font-size: 1.5rem;
+  }
    
 
   }
@@ -446,6 +472,21 @@ MEDIA QUERIES
     font-size: 4rem !important;
   }
 
+  .covid{
+    margin-top: 100px;
+  }
+
+  .covid img{
+    height: 35px;
+  }
+
+  .covid__pop-up h3,
+  .covid__pop-up p{
+    width: 95%;
+    margin: 0 auto;
+
+  }
+
   /* CALENDAR */
 
   .section-program__grid{
@@ -464,13 +505,13 @@ MEDIA QUERIES
     margin: 0 auto;
   }
 
-  .title_nov{
-    margin-right: 110px !important;
-  }
-
   .title_nov,
   .title_dec{
+    display: block !important;
     font-size: 3rem !important;
+  }
+  .title_nov{
+    margin-left: 0 !important;
   }
 
   /* TYPOGRAPHY */
@@ -538,6 +579,7 @@ MEDIA QUERIES
 
 }
 
+
 .section-program__grid--months-images img{
   width: 350px !important;
   height: auto;
@@ -575,11 +617,15 @@ MEDIA QUERIES
   font-size: 2rem !important;
 }
 
-.title_nov{
-  margin-left: 5px;
-  margin-right: 85px !important;
-}
+/* .title_nov{
+  margin-left: 20px !important;
+  margin-right: 75px !important;
+} */
 
+.section-program__months{
+  max-width: 90%;
+  margin: 0 auto;
+}
 
 
  .some{
@@ -616,6 +662,22 @@ MEDIA QUERIES
 .heading-secondary h3{
   font-size: 3rem;
 }
-  
+
+/* COVID */
+
+.covid__pop-up h3{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.covid__pop-ip span{
+  font-size: 1.5rem;
+}
+
+.covid__pop-up p,
+.covid__pop-up ul li{
+  font-size: 1.2rem;
+}
+
 
 }

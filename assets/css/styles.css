@@ -89,12 +89,12 @@ body {
 
 .snow {
   width: 100%;
-  height: 6180px;
+  height: 6170px;
   position: absolute;
   background-image: url(../image/events/snowflakes.png), url(../image/events/snowflakes1.png);
   z-index: 0;
   animation-name: snowing;
-  animation-duration: 50s;
+  animation-duration: 55s;
   animation-iteration-count: infinite; }
 
 @keyframes snowing {
@@ -174,7 +174,7 @@ body {
   width: 100%;
   margin: 50px auto 50px auto;
   color: #fff;
-  background-color: #618762; }
+  background-color: #3B5b3b; }
   .heading-primary h1 {
     font-size: 6rem;
     font-weight: 500;
@@ -287,7 +287,7 @@ body {
     padding: 10px 20px;
     border-radius: 3px !important;
     border-collapse: collapse;
-    background-color: #618762;
+    background-color: #750c00;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); }
     .card-content-1__btn a:hover {
       filter: brightness(120%); }
@@ -315,6 +315,7 @@ body {
       float: right;
       top: 100px; }
       .section-header__content__nav ul {
+        z-index: 999999;
         list-style: none;
         margin-right: 20px; }
         .section-header__content__nav ul > *:not(:first-child) {
@@ -327,7 +328,7 @@ body {
             display: inline-block;
             font-size: 1.7rem; }
             .section-header__content__nav ul a li:hover {
-              color: #bf0404; }
+              color: #750c00; }
       .section-header__content__nav .hamburgerBtn {
         position: absolute;
         top: 30px;
@@ -344,7 +345,7 @@ body {
 
 footer {
   width: 100%;
-  background-color: #3b5b3b; }
+  background-color: #3B5b3b; }
   footer .footer-content {
     width: 114rem;
     margin: 0 auto;
@@ -415,13 +416,20 @@ footer {
 
 .section-snow {
   position: fixed;
-  z-index: 9999; }
+  z-index: 1; }
   .section-snow h6 {
     font-size: 6rem;
     color: #FBFCD7;
     text-shadow: 0 0px 6px #1e3040; }
     .section-snow h6:hover {
       cursor: pointer; }
+
+.covid {
+  position: fixed;
+  margin-top: 150px;
+  z-index: 1; }
+  .covid img {
+    height: 55px; }
 
 .section-events {
   max-width: 114rem;
@@ -444,6 +452,7 @@ footer {
       transition: all .2s;
       width: 100%;
       height: 100%;
+      cursor: pointer;
       overflow: hidden;
       border-radius: 5px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
@@ -463,8 +472,7 @@ footer {
         background-color: #f2f2f2;
         position: relative;
         padding: 24px;
-        box-sizing: border-box;
-        cursor: pointer; }
+        box-sizing: border-box; }
         .section-events__grid .card__content h3 {
           font-size: 2.4rem;
           margin-bottom: 10px; }
@@ -488,10 +496,9 @@ footer {
   max-width: 114rem;
   margin: 0 auto; }
   .section-program__title {
-    background-color: #5b885d;
+    background-color: #3B5b3b;
     padding: 20px 0; }
   .section-program__months {
-    margin-left: 35px;
     width: 100%;
     height: 100%; }
     .section-program__months h3 {
@@ -516,14 +523,14 @@ footer {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(12fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 30px; }
     .section-program__grid--months-images {
       margin-top: 50px;
       width: 100%;
       height: 100%;
       position: relative;
-      grid-column: 2/6; }
+      grid-column: 1/7; }
       .section-program__grid--months-images .img-november img {
         width: 600px;
         height: auto;
@@ -535,7 +542,7 @@ footer {
     .section-program__grid--workhours {
       width: 100%;
       height: 100%;
-      grid-column: 7/13;
+      grid-column: 9/13;
       color: #f2f2f2;
       display: grid;
       grid-template-rows: 50px 1fr;
@@ -558,12 +565,12 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(300px); }
         .section-program__grid--workhours .workhours-text h5 {
-          font-size: 2rem;
+          font-size: 1.7rem;
           line-height: 50px; }
 
 .section-tickets__title {
   width: 100%;
-  background-color: #5b885d;
+  background-color: #3B5b3b;
   margin-bottom: 100px;
   padding: 20px 0; }
 
@@ -593,7 +600,7 @@ footer {
 
 .section-gallery__title {
   width: 100%;
-  background-color: #4a754c;
+  background-color: #3B5b3b;
   padding: 20px 0; }
 
 .section-gallery {
@@ -619,6 +626,54 @@ footer {
         box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); }
     .section-gallery__grid::-webkit-scrollbar {
       display: none; }
+
+.covid__pop-up {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  transform: all  .3s ease-in-out; }
+  .covid__pop-up--content {
+    width: 80%;
+    height: 65vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #1e3040;
+    text-align: center;
+    color: #f2f2f2;
+    overflow: hidden; }
+    .covid__pop-up--content h3 {
+      font-size: 5rem;
+      margin-bottom: 50px; }
+    .covid__pop-up--content p {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 2rem;
+      line-height: 150%; }
+    .covid__pop-up--content ul {
+      margin-top: 50px; }
+      .covid__pop-up--content ul li {
+        list-style: none;
+        font-size: 1.7rem;
+        margin-bottom: 15px; }
+        .covid__pop-up--content ul li span {
+          margin-right: 20px;
+          font-size: 2rem;
+          color: #750c00; }
+  .covid__pop-up .covid__closing-tag {
+    position: absolute;
+    top: 20%;
+    right: 12%; }
+    .covid__pop-up .covid__closing-tag a {
+      color: #f2f2f2; }
 
 .pop-up {
   width: 100%;
@@ -665,5 +720,9 @@ footer {
       color: white; }
 
 .pop-up:target {
+  opacity: 1;
+  visibility: visible; }
+
+.covid__pop-up:target {
   opacity: 1;
   visibility: visible; }
